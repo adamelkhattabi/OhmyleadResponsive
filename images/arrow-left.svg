@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43" width="43" height="43">
+	<title>Ellipse 2-svg</title>
+	<defs>
+		<image width="8" height="14" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDggMTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03IDFMMSA3TDcgMTMiIHN0cm9rZT0iI0JDQkNCQyIvPgo8L3N2Zz4K"/>
+	</defs>
+	<style>
+		.s0 { fill: none;stroke: #bcbcbc } 
+	</style>
+	<use id="Vector 1" href="#img1" transform="matrix(1,0,0,1,17,14)"/>
+	<path id="Layer" class="s0" d="m21.5 42.5c-11.6 0-21-9.4-21-21 0-11.6 9.4-21 21-21 11.6 0 21 9.4 21 21 0 11.6-9.4 21-21 21z"/>
+</svg>
