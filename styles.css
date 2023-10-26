@@ -80,9 +80,20 @@ a {
 /* NAVIGATION */
 /**************************/
 .logo{
+  cursor: pointer;
   padding-left: 6rem;
-
-  
+ }
+ .logo-col1{
+  cursor: pointer;
+ }
+ .logo-col2{
+  cursor: pointer;
+ }
+ .footer-heading{
+  cursor: pointer;
+ }
+ .footer-link{
+  cursor: pointer;
  }
 .main-nav-list{
   list-style: none;
