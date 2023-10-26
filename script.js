@@ -54,7 +54,7 @@ $(document).ready(function () {
         ],
       },
       768: {
-        items: 2, // Display 2 items on medium-sized screens (768px wide and above)
+        items: 3, // Display 2 items on medium-sized screens (768px wide and above)
         navText: [
           "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
           "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
@@ -67,11 +67,18 @@ $(document).ready(function () {
           "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
         ],
       },
+      1100: {
+        items: 3, // Display 3 items on large screens (992px wide and above)
+        navText: [
+          "<div class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></div>",
+          "<div class='custom-next'><img src='images/arrow-right.svg' alt='Next'></div>",
+        ],
+      },
       1200: {
         items: 5,
         navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
+          "<div class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></div>",
+          "<div class='custom-next'><img src='images/arrow-right.svg' alt='Next'></div>",
         ],
       },
     },
@@ -84,8 +91,8 @@ $(document).ready(function () {
     dots: false,
     margin: 20,
     navText: [
-      "<button class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></button>",
-      "<button class='custom-next'><img src='images/arrow-right.svg' alt='Next'></button>",
+      "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",
+      "<button class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></button>",
     ],
     responsive: {
       0: {
@@ -116,8 +123,8 @@ $(document).ready(function () {
         items: 3,
         margin: 20, // Adjust the margin for larger screens
         navText: [
-          "<button class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></button>",
-          "<button class='custom-next'><img src='images/arrow-right.svg' alt='Next'></button>",
+          "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",
+          "<button class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></button>",
         ],
       },
     },
