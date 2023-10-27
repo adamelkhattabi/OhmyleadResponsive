@@ -735,6 +735,7 @@ text-transform: uppercase;
   }
   .management-header{
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
     color: #164D62;
     font-family: Plus Jakarta Sans;
     font-size: 35px;
@@ -759,6 +760,7 @@ text-transform: uppercase;
   }
   .last-text {
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
     color: #164D62;
     font-family: Plus Jakarta Sans;
     font-size: 22px;
@@ -886,6 +888,7 @@ text-transform: uppercase;
   padding-top: 95px;
   text-align: left;
   margin: 0;
+  padding-right: 1.25rem;
 }
 .impact-text {
   padding: 0;
@@ -897,6 +900,7 @@ text-transform: uppercase;
   line-height: normal;
   text-align: left;
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
   padding-top: 22px;
   margin: 0;
 }
@@ -1170,11 +1174,29 @@ text-transform: uppercase;
 }
 
 @media screen and (min-width: 577px) and (max-width: 944px) {
+    .accordion {
+      padding: 0;
+    }
+
     .prv-heading{
+      color: #181824;
+      font-family: Plus Jakarta Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 56px; 
       padding-left: 1.25rem;
+      padding-top: 95px;
       padding-right: 1.25rem;
     }
     .prv-text{
+      padding: 20px 1.25rem 41px 1.25rem;
+      color: #1E1E1E;
+      font-family: Plus Jakarta Sans;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
       padding-left: 1.25rem;
       padding-right: 1.25rem;
     }
@@ -1216,8 +1238,26 @@ text-transform: uppercase;
 }
 @media screen and (max-width: 576px)  {
 
+  .accordion {
+      padding: 0 1.25rem;
+    }
+  .accordion-question{
+    color: #1E1E1E;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .accordion-answer{
+    color: rgba(30, 30, 30, 0.69);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-  
 .header {
   padding: 0;
   margin: 0;
@@ -1728,7 +1768,7 @@ h4 {
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  padding-left: 1.25rem;
+  
 }
 
 .sharing {
@@ -1761,6 +1801,7 @@ h4 {
 
 .reminder-responsive {
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .reminder-mobile {
@@ -1782,7 +1823,7 @@ h4 {
 .management-section {
   padding: 0;
   margin: 0;
-  padding-bottom: 95px;
+  padding-bottom: 105px;
   background-color: #00B6F90F;
 }
 
@@ -1804,6 +1845,7 @@ h4 {
 
 .management-header {
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
   color: #164D62;
   font-family: Plus Jakarta Sans;
   font-size: 35px;
@@ -1816,6 +1858,7 @@ h4 {
 
 .management-text {
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
   color: #164D62;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
@@ -1828,6 +1871,7 @@ h4 {
 
 .last-text {
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
   color: #164D62;
   font-family: Plus Jakarta Sans;
   font-size: 22px;
@@ -1861,6 +1905,7 @@ h4 {
 
 .analytics-responsive {
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .analytics-mobile {
@@ -1967,6 +2012,7 @@ h4 {
   padding-left: 1.25rem;
   padding-top: 95px;
   text-align: left;
+  padding-right: 1.25rem;
 }
 
 .impact-text {
@@ -1981,6 +2027,7 @@ h4 {
   text-align: left;
   padding-left: 1.25rem;
   padding-top: 22px;
+  padding-right: 1.25rem;
 }
 
 .owl-carousel.last-carousel {
@@ -2008,13 +2055,26 @@ h4 {
 }
 
 .prv-heading {
+  color: #181824;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; 
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  padding-top: 95px;
 }
 
 .prv-text {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding: 20px 1.25rem 41px 1.25rem;
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
 }
 
 .prvcard-text {
