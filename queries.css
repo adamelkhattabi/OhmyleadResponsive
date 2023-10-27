@@ -453,6 +453,7 @@ text-transform: uppercase;
       text-align: left;
       padding-top: 21px;
       padding-left: 1.25rem;
+      text-align: left !important;
       
     }
     .services-text {
@@ -467,6 +468,8 @@ text-transform: uppercase;
       padding-top: 21px;
       text-align: left;
       padding-left: 1.25rem;
+      padding-right: 1.25rem;
+
 
     }
     .item{
@@ -517,9 +520,9 @@ text-transform: uppercase;
   text-align: left;
  }
  .leads-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  text-align: left !important;
  }
 
 }
@@ -591,9 +594,9 @@ text-transform: uppercase;
   text-align: left;
  }
  .sharing-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  text-align: left !important;
   
  }
  .contact-paragraphe{
@@ -634,9 +637,9 @@ text-transform: uppercase;
   text-align: left;
  }
  .reminder-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  text-align: left !important;
  }
  .contact-paragraphe{
   color: #1E1E1E;
@@ -681,9 +684,10 @@ text-transform: uppercase;
   text-align: left;
  }
  .analytics-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  padding-bottom: 42px !important;
+  text-align: left !important;
  }
  .contact-paragraphe{
   color: #1E1E1E;
@@ -1090,8 +1094,15 @@ text-transform: uppercase;
 .header {
   z-index: 999999;
 }
+.custom-prev {
+  left: 0 !important;
+  top: -1px !important;
+  
+}
 h4 {
   padding-left: 1.25rem !important;
+  text-align: center !important;
+  padding-right: 1.25rem !important;
 }
 .FAQS{
   padding:0 1.25rem;
@@ -1116,6 +1127,8 @@ h4 {
   padding: 20px 30px;
   max-height: 62px;
   text-align: center;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .guidance-section {
   padding-left: 1.25rem;
@@ -1224,6 +1237,7 @@ h4 {
 .section-hero-mobile {
   display: none;
 }
+
 .top-companies{
   color: #1E1E1E;
   text-align: center;
@@ -1726,9 +1740,9 @@ h4 {
 }
 
 .leads-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  text-align: left !important;
 }
 
  .lead-testimonial {
@@ -1778,6 +1792,7 @@ h4 {
   text-align: start;
   padding-top: 21px; 
   padding-left: 1.25rem;
+  text-align: left !important;
 }
 
 .services-text {
@@ -1792,6 +1807,7 @@ h4 {
   padding-top: 21px;
   text-align: left;
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .item {
@@ -1832,6 +1848,11 @@ h4 {
 .contacts-responsive {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.contacts-responsive h4 {
+  text-align: left !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .button-container {
@@ -1874,9 +1895,9 @@ h4 {
 }
 
 .sharing-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  text-align: left !important;
  
   }
 
@@ -1904,9 +1925,9 @@ h4 {
 }
 
 .reminder-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  text-align: left !important;
 }
 
 .management-section {
@@ -2008,9 +2029,10 @@ h4 {
 }
 
 .analytics-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
+  padding: 0 !important;
+  padding-top: 15px !important;
+  padding-bottom: 42px !important;
+  text-align: left !important;
 }
 
 .integration-section{
