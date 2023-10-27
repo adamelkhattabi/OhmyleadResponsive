@@ -1,16 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".main-nav-list");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-
-})
-
-document.querySelectorAll(".main-nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}))
 // JavaScript to toggle the FAQ answers
 const accordionItems = document.querySelectorAll(".accordion-item");
 
@@ -22,13 +9,21 @@ accordionItems.forEach((item) => {
   });
 });
 
-// JavaScript code to toggle the mobile menu
 document.addEventListener("DOMContentLoaded", function () {
-  const mobileNavButton = document.querySelector(".btn-mobile-nav");
-  const mobileMenu = document.querySelector(".mobile-menu");
+  const hamburgerIcon = document.querySelector(".hamburger-icon");
+  const closeMenuIcon = document.querySelector(".close-menu-icon");
+  const mainNavList = document.querySelector(".main-nav-list");
 
-  mobileNavButton.addEventListener("click", function () {
-    mobileMenu.classList.toggle("show-mobile-menu");
+  hamburgerIcon.addEventListener("click", function () {
+    mainNavList.classList.toggle("active");
+    hamburgerIcon.style.display = "none";
+    closeMenuIcon.style.display = "block";
+  });
+
+  closeMenuIcon.addEventListener("click", function () {
+    mainNavList.classList.toggle("active");
+    closeMenuIcon.style.display = "none";
+    hamburgerIcon.style.display = "block";
   });
 });
 
