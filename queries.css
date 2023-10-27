@@ -1017,15 +1017,7 @@ line-height: normal;
   .button-pink-mobile {
     display: none;
   }
-  .footer-container{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 92px;
-  }
+  
   
   FAQS{
     padding:0 1.25rem;
@@ -1078,7 +1070,60 @@ line-height: normal;
 
 
 
+@media screen and (max-width: 769px) {
+  .features-section {
+  display: none;
+}
 
+.privacy-section {
+  display: none;
+}
+
+.source {
+  display: none;
+}
+
+.impact-section {
+  display: none;
+}
+
+.integration-section {
+  display: none;
+}
+
+.strategy-section {
+  display: none;
+}
+.analytics {
+  display: none;
+}
+
+.reminder-section {
+  display: none;
+}
+
+.sharing-section {
+  display: none;
+}
+
+.contacts-section {
+  display: none;
+}
+.section-hero {
+  display: none;
+}
+
+.footer-container{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 92px;
+ }
+  
+}
 @media screen and (min-width: 769px)  {
 .section-hero-mobile {
   display: none;
@@ -1093,6 +1138,7 @@ line-height: normal;
   line-height: 41px;
   padding-top: 69px;
 }
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -1145,6 +1191,8 @@ line-height: normal;
 
 }
 @media screen and (max-width: 576px)  {
+
+
   
 .header {
   padding: 0;
