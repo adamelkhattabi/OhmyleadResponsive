@@ -1768,9 +1768,5 @@ display: flex;
   margin: 0 auto;
   background: rgba(104, 104, 104, 0.18);
   height: 2px; /* Adjust the height as needed */
-  margin-top: 47px;
- 
-  
-  margin-right: 1.25rem;
-  
+  margin-top: 47px; 
 }

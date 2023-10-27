@@ -42,6 +42,13 @@ $(document).ready(function () {
     ],
     responsive: {
       0: {
+        items: 1, // Display 1 item on small screens (less than 600px wide)
+        navText: [
+          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
+          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
+        ],
+      },
+      400: {
         items: 2, // Display 1 item on small screens (less than 600px wide)
         navText: [
           "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
@@ -91,6 +98,14 @@ $(document).ready(function () {
     ],
     responsive: {
       0: {
+        items: 1,
+        margin: 10, // Adjust the margin for smaller screens
+        navText: [
+          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
+          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
+        ],
+      },
+      400: {
         items: 2,
         margin: 10, // Adjust the margin for smaller screens
         navText: [
