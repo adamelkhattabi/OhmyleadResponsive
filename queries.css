@@ -61,6 +61,9 @@
   .sharing-img{
     width: 97%;
   }
+  .accordion {
+    padding:0 17.18rem;
+  }
 }
 @media (max-width: 600px) {
 
@@ -697,6 +700,7 @@ h2{
         max-width: 100%;
     margin: 0 91px;
     margin-top: 100px;
+    padding-left: 26px;
   }
   
 }

@@ -112,7 +112,7 @@ $(document).ready(function () {
         ],
       },
       992: {
-        items: 3,
+        items: 4,
         margin: 20, // Adjust the margin for larger screens
         navText: [
           "<button class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></button>",
@@ -120,7 +120,7 @@ $(document).ready(function () {
         ],
       },
       1220: {
-        items: 3,
+        items: 6,
         margin: 20, // Adjust the margin for larger screens
         navText: [
           "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",

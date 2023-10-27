@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   height: 6rem;
+   height: 9rem;
   padding: 0 5.8rem;
   width: 100%;
   z-index: 9999;
@@ -182,10 +182,13 @@ padding: 17px 29px;
 .section-hero {
 
     background: linear-gradient(107deg, #1D2CAB 0.74%, #00BAE3 100%);
-    padding-left: 1rem;
+    padding-left: 99px;
   
 
     
+}
+.hero-content{
+  margin-bottom: 10rem;
 }
 .hero-mobile-image {
   width: 100%;
@@ -401,12 +404,18 @@ background-color: transparent;
 .custom-prev2 {
   background-color: transparent;
   border: none;
+  position: absolute;
+    left: -69px;
+    top: 18px;
   
   
 }
 .custom-next2 {
   background-color: transparent;
   border: none;
+  position: absolute;
+    right: -41px;
+    top: 17px;
   
 }
 
@@ -1447,6 +1456,7 @@ line-height: 56px; /* 140% */
     width:  100%;
     margin: 0 auto;
     margin-bottom: 119px;
+        padding: 0 22%
 }
 
 .accordion-question {
