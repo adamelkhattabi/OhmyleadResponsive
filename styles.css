@@ -187,6 +187,9 @@ padding: 17px 29px;
 
     
 }
+.hero-mobile-image {
+  width: 100%;
+}
 .hero-mobile{
   display: none;
 }
@@ -285,7 +288,7 @@ background: rgba(234, 234, 234, 0.20);
 .partners {
   text-align: center; /* Center the carousel and its content */
   
-height: 318px;
+
 flex-shrink: 0;
 background: rgba(234, 234, 234, 0.20);
 }

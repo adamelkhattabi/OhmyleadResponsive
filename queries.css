@@ -100,6 +100,11 @@
   .hero-image{
     display: none;
   }
+   .hero-mobile-img{
+    display: block;
+    width: 100%;
+  }
+
 
  
 }
@@ -433,8 +438,19 @@
 .partners {
   padding: 0 1rem;
 }
+.owl-carousel.first-carousel .owl-stage-outer {
+    padding:0;
+    margin-top:20px;
+  }
 
 h2{
+  color: #1E1E1E;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   padding-top: 95px;
 }
 .owl-carousel.owl-theme.first-carousel {
@@ -544,6 +560,7 @@ h2{
   }
   .section-hero-mobile{
     background: linear-gradient(107deg, #1D2CAB 0.74%, #00BAE3 100%);
+    padding-top: 95px;
   }
   .hero-mobile-heading {
     color: #FFF;
@@ -579,7 +596,7 @@ h2{
     text-align: center;
   }
   .hero-mobile-img{
-    width: 100%;
+    
     overflow-x: hidden;
     padding-top: 19px;
   }
@@ -600,6 +617,7 @@ h2{
     margin-top: 27px;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+    max-height: 63px;
   }
   
 }
@@ -726,12 +744,14 @@ line-height: normal;
   .button-container-ytb {
     margin-top: 40px;
         padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
 
   }
 
   .video-bottom-text {
     padding: 20px; /* Adjust the top margin as needed */
-    padding-bottom: 84px; /* Adjust the bottom padding as needed */
+    padding-bottom: 95px; /* Adjust the bottom padding as needed */
   }
 }
 
@@ -773,12 +793,14 @@ line-height: normal;
   .button-container-ytb {
     margin-top: 20px; 
         padding-left: 1.25rem;
+        padding-right: 1.25rem;
+
 
   }
 
   .video-bottom-text {
     padding: 20px; /* Adjust the top margin for mobile */
-    padding-bottom: 84px; /* Adjust the bottom padding for mobile */
+    padding-bottom: 95px; /* Adjust the bottom padding for mobile */
   }
 }
 
@@ -862,6 +884,7 @@ line-height: normal;
   /* For screens with a maximum width of 600px (mobile) */
   @media (max-width: 600px) {
     .services {
+      display: block;
         padding-left: 1.25rem;
       }
     
@@ -1019,20 +1042,27 @@ line-height: normal;
   @media (max-width: 1200px) {
   
  .contacts-responsive {
-  padding-left: 1.25rem;
+  
  }
  .contacts-mobile {
   width: 100%;
   padding-top: 58px;
  }
  .contacts-responsive h3 {
+  padding-left: 1.25rem;
   padding-top: 95px;
   text-align: left;
  }
  .contacts-responsive h4 {
-  padding: 0;
+  color: #181824;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   padding-top: 15px;
   text-align: left;
+  padding-left: 1.25rem;
  }
  .contact-paragraphe{
   color: #1E1E1E;
@@ -1042,6 +1072,7 @@ line-height: normal;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+  padding-left: 1.25rem;
   
  }
  .lead-testimonial {
@@ -1066,6 +1097,10 @@ line-height: normal;
   padding-left: 1.25rem;
   
  }
+ .button-container {
+  margin: 0;
+  padding-top: 72px;
+ }
  .contacts-mobile {
   width: 100%;
   padding-top: 58px;
@@ -1074,11 +1109,7 @@ line-height: normal;
   padding-top: 95px;
   text-align: left;
  }
- .contacts-responsive h4 {
-  padding: 0;
-  padding-top: 15px;
-  text-align: left;
- }
+ 
  .contact-paragraphe{
   color: #1E1E1E;
   font-family: Plus Jakarta Sans;
@@ -1123,6 +1154,7 @@ line-height: normal;
   padding: 0;
   padding-top: 15px;
   text-align: left;
+  padding-right: 1.25rem;
  }
  .contact-paragraphe{
   color: #1E1E1E;
@@ -1168,6 +1200,10 @@ line-height: normal;
   padding: 0;
   padding-top: 15px;
   text-align: left;
+  padding-right: 1.25rem;
+ }
+ .testimonial-text {
+  padding-right: 1.25rem;
  }
  .contact-paragraphe{
   color: #1E1E1E;
@@ -2003,6 +2039,46 @@ line-height: normal;
   }
   .accordion {
     padding:0 1.25rem;
+  }
+  .accordion-question{
+    color: #1E1E1E;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .accordion-answer{
+    color: rgba(30, 30, 30, 0.69);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .guidance-header{
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .guidance-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .footer-nav {
+    gap: 0;
+  }
+  .management{
+    gap: 0;
   }
   
 }

@@ -47,13 +47,13 @@ $(document).ready(function () {
     ],
     responsive: {
       0: {
-        items: 1, // Display 1 item on small screens (less than 600px wide)
+        items: 2, // Display 1 item on small screens (less than 600px wide)
         navText: [
           "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
           "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
         ],
       },
-      768: {
+      650: {
         items: 3, // Display 2 items on medium-sized screens (768px wide and above)
         navText: [
           "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
