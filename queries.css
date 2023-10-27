@@ -731,6 +731,7 @@ line-height: normal;
         align-items: center;
   }
   .management-header{
+    padding-left: 1.25rem;
     color: #164D62;
     font-family: Plus Jakarta Sans;
     font-size: 35px;
@@ -743,6 +744,7 @@ line-height: normal;
   }
 
   .management-text {
+    padding-left: 1.25rem;
     color: #164D62;
     font-family: Plus Jakarta Sans;
     font-size: 20px;
@@ -753,6 +755,7 @@ line-height: normal;
     text-align: left ;
   }
   .last-text {
+    padding-left: 1.25rem;
     color: #164D62;
     font-family: Plus Jakarta Sans;
     font-size: 22px;
@@ -1071,7 +1074,7 @@ line-height: normal;
 
 
 @media screen and (max-width: 769px) {
-  .features-section {
+.features-section {
   display: none;
 }
 
@@ -1113,6 +1116,24 @@ line-height: normal;
   display: none;
 }
 
+.management-image {
+  display: none;
+}
+
+.button-pink-easy{
+  display: none;
+}
+.management-img-resp {
+  border-radius: 24px;
+  border: 1px solid #ECECEC;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
+  width: 90%;
+}
+
+.management-image-resp {
+  text-align: center;
+}
 .footer-container{
   padding: 0;
   margin: 0;
@@ -1226,6 +1247,9 @@ line-height: normal;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.15);
 }
 
 .main-nav-link-mobile {
@@ -1348,6 +1372,9 @@ h1{
   z-index: 99;
   width: 94%;
   margin-left: 3%; 
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.15);
 } 
 
 .close-button {
@@ -1752,7 +1779,6 @@ h4 {
 .management {
   padding: 0;
   margin: 0;
-  padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1767,6 +1793,7 @@ h4 {
 }
 
 .management-header {
+  padding-left: 1.25rem;
   color: #164D62;
   font-family: Plus Jakarta Sans;
   font-size: 35px;
@@ -1778,6 +1805,7 @@ h4 {
 }
 
 .management-text {
+  padding-left: 1.25rem;
   color: #164D62;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
@@ -1789,6 +1817,7 @@ h4 {
 }
 
 .last-text {
+  padding-left: 1.25rem;
   color: #164D62;
   font-family: Plus Jakarta Sans;
   font-size: 22px;

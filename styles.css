@@ -1015,11 +1015,9 @@ width: 100%;
   line-height: normal;
   text-decoration: none;
   padding: 20px 30px;
-  margin-top: 44px;
   width: max-content;
-  margin-bottom: 118px;
- 
 }
+
 .button-pink-mobile:hover{
   background: #F03E64;
   transition: all 0.3s;
