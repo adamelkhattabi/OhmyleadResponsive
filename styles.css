@@ -270,8 +270,7 @@ position: absolute;
 /* Style the "partners" section */
 .partners {
   text-align: center; /* Center the carousel and its content */
-  
-height: 318px;
+
 flex-shrink: 0;
 background: rgba(234, 234, 234, 0.20);
 }
