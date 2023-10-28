@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).ready(function () {
   // Initialize the carousels
   $(".first-carousel").owlCarousel({
-    items: 5,
+    items: 4,
 
     loop: true,
     nav: true,
@@ -62,15 +62,8 @@ $(document).ready(function () {
           "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
         ],
       },
-      992: {
-        items: 3, // Display 3 items on large screens (992px wide and above)
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
-      },
-      1100: {
-        items: 3, // Display 3 items on large screens (992px wide and above)
+      1024: {
+        items: 4,
         navText: [
           "<div class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></div>",
           "<div class='custom-next'><img src='images/arrow-right.svg' alt='Next'></div>",
@@ -117,16 +110,8 @@ $(document).ready(function () {
         items: 3,
         margin: 15, // Adjust the margin for medium-sized screens
         navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
-      },
-      992: {
-        items: 4,
-        margin: 20, // Adjust the margin for larger screens
-        navText: [
-          "<button class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></button>",
-          "<button class='custom-next'><img src='images/arrow-right.svg' alt='Next'></button>",
+          "<div class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></div>",
+          "<div class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></div>",
         ],
       },
       1220: {

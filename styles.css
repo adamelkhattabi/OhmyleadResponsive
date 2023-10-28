@@ -262,29 +262,15 @@ position: absolute;
 /* Style the "partners" section */
 /* Style the "partners" section */
 .partners {
-  text-align: center; /* Center the carousel and its content */
-
-flex-shrink: 0;
-background: rgba(234, 234, 234, 0.20);
+  text-align: center; 
+  flex-shrink: 0;
+  background: rgba(234, 234, 234, 0.20);
+  padding-bottom: 99px;
 }
 /* Style the "partners" section */
 /* Style the "partners" section */
-.partners {
-  text-align: center; /* Center the carousel and its content */
-  
 
-flex-shrink: 0;
-background: rgba(234, 234, 234, 0.20);
-}
 
-/* Style the "partners" section */
-.partners {
-  text-align: center; /* Center the carousel and its content */
-  
-height: 318px;
-flex-shrink: 0;
-background: rgba(234, 234, 234, 0.20);
-}
 
 /* Update the carousel styling */
 .owl-carousel.owl-theme {
@@ -482,7 +468,7 @@ margin: 0 204px;
   
   flex-shrink: 0;
 }
-h5{
+.services h3{
   margin: 0;
   padding-top: 102px;
   color: #00B6F9;
@@ -514,7 +500,9 @@ strong {
 /**************************/
 /* Source section */
 /**************************/
-
+.management-image-resp {
+    text-align: center;
+}
 .source {
   padding-left:99px;
   padding-top: 47px;
@@ -639,7 +627,7 @@ gap: 16px;
   padding-bottom: 17px;
 }
 .card-one {
-  width: 432px;
+width: 432px;
 height: 142px;
 flex-shrink: 0;
 padding: 2px 22px 13px;
