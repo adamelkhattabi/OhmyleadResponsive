@@ -1318,6 +1318,20 @@ h4 {
 }
 @media screen and (max-width: 576px)  {
 
+  .guidance-button-container {
+    padding-bottom: 95px;
+  }
+  .guidance-header {
+    padding-top: 95px;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
   .circle1 {
     left: -21rem;
     top: -8rem;
