@@ -173,3 +173,23 @@ $(document).ready(function () {
     },
   });
 });
+
+$(document).ready(function () {
+  // Function to check if the footer is in the viewport
+  function isFooterVisible() {
+    var footer = $("footer");
+    var windowHeight = $(window).height();
+    var scrollTop = $(window).scrollTop();
+    var footerTop = footer.offset().top;
+    return footerTop - 10 < scrollTop + windowHeight;
+  }
+
+  // Toggle the class to hide the header
+  $(window).scroll(function () {
+    if (isFooterVisible()) {
+      $(".header").addClass("hide-header");
+    } else {
+      $(".header").removeClass("hide-header");
+    }
+  });
+});
