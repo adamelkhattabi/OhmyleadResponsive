@@ -1318,6 +1318,18 @@ h4 {
 }
 @media screen and (max-width: 576px)  {
 
+  .circle1 {
+    left: -21rem;
+    top: -8rem;
+  }
+  .cirlce2 { 
+    bottom: 5rem;
+    right: -11rem;
+  }
+  .footer-nav {
+    gap: 1px;
+    padding-top: 18px;
+  }
   .acrd {
     display: none;
   }
