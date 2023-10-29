@@ -1,5 +1,19 @@
 
 @media (min-width: 1023px){
+  .contacts h3 {
+    text-align: left;
+  }
+  .text-b {
+    padding-top: 7px;
+  }
+  .impact-section h2 {
+    padding-left: 300px; 
+    padding-right: 300px; 
+
+  }
+  .features-section{
+    padding-top: 50px;
+  }
   .leads h3 {
     text-align: left;
   } 
@@ -142,6 +156,18 @@
     display: none;
   }
 }
+@media  (min-width: 1440px) {
+  .owl-carousel.owl-theme.first-carousel {
+    margin-left: 151px;
+  }
+  .analytic {
+    gap: 136px;
+  }
+  .sharing {
+    padding-left:130px ;
+  }
+  
+}
 
 @media (min-width: 1024px) and (max-width:1300px) {
   .source {
@@ -227,12 +253,15 @@
   }
 
   .custom-prev2{
-    left: 0;
+    left: -30px;
     top: 0;
   }
   .custom-next2{
-    right: 0;
+    right: -30px;
     top: 0;
+  }
+  .second-carousel {
+    padding-left: 10px;
   }
   .hero-web {
     max-width: 130%;
@@ -275,6 +304,11 @@
 }
 
 
+@media screen and (min-width: 770px) {
+  .address2 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 769px) {
 
@@ -297,9 +331,7 @@
   .sharing-responsive h2 {
     text-align: left;
   }
-  .contacts-responsive h2 {
-    text-align: left;
-  }
+ 
 .header {
   z-index: 999999;
 }
@@ -446,6 +478,7 @@ h4 {
     .management-image {
       display: none;
     }
+    
     .strategy-section {
       display: none;
     }
@@ -455,6 +488,7 @@ h4 {
    .testimonial-footer {
     padding: 0;
   }
+  
   .footer-container{
   padding: 0;
   margin: 0;
@@ -1481,6 +1515,14 @@ h4 {
     right: 5px;
     top: -13px;
   }
+   .contacts-responsive h2 {
+    text-align: left;
+  }
+  .services h3 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: left;
+  }
   .custom-prev {
     left: 5px !important;
     top: -13px !important; 
@@ -1492,21 +1534,36 @@ h4 {
   }
   .sharing-responsive h2 {
     text-align: left;
+    padding-right: 1.25rem;
   }
 
   .leads-responsive h2 {
     text-align: left;
+    padding-right: 1.25rem;
   }
   .contacts-responsive h2 {
     text-align: left;
+    padding-right: 1.25rem;
   }
   .button-container-2 {
     padding-top: 72px;
+  }
+  .services-text {
+    padding-right: 1.25rem;
+  }
+  h2 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .content-video h2 {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
   }
 
   .services h2 {
     text-align: left;
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .guidance-button-container {
@@ -2448,6 +2505,9 @@ h4 {
 }
 
 @media screen and (max-width: 400px) {
+   .contacts-responsive h2 {
+    text-align: left;
+  }
   .custom-next{
     right: 5px !important;
     top: -13px !important;

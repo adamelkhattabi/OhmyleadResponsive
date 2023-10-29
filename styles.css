@@ -1131,7 +1131,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 text-decoration: none;
-padding: 17px 55px;
+padding: 17px 61px 17px 55px;
 transition: background-color 0.3s, color 0.3s;
 }
 .button-blue:hover {
@@ -1186,14 +1186,14 @@ padding:34px 38px 36px 32px;
 background-color: transparent;
   border: none;
     position: absolute;
-    bottom: -12rem;
+    bottom: -16rem;
     left: -75px;
 }
 .custom-next-last{
   background-color: transparent;
   border: none;
     position: absolute;
-    bottom: -12rem;
+    bottom: -16rem;
 }
 .impact-icon{
   width: 4%;

@@ -31,15 +31,15 @@ $(document).ready(function () {
   // Initialize the carousels
   $(".first-carousel").owlCarousel({
     items: 4,
-
+    navText: [
+      "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
+      "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
+    ],
     loop: true,
     nav: true,
     dots: false, // Enable dots
     margin: 17,
-    navText: [
-      "<button class='custom-prev-first'><img src='images/arrow-left.svg' alt='Previous'></button>",
-      "<button class='custom-next-first'><img src='images/arrow-right.svg' alt='Next'></button>",
-    ],
+
     responsive: {
       0: {
         items: 1, // Display 1 item on small screens (less than 600px wide)
@@ -62,15 +62,9 @@ $(document).ready(function () {
           "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
         ],
       },
-      1024: {
-        items: 4,
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right.svg' alt='Next'></div>",
-        ],
-      },
+
       1200: {
-        items: 5,
+        items: 4,
         navText: [
           "<div class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></div>",
           "<div class='custom-next'><img src='images/arrow-right.svg' alt='Next'></div>",
@@ -86,8 +80,8 @@ $(document).ready(function () {
     dots: false,
     margin: 20,
     navText: [
-      "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",
-      "<button class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></button>",
+      "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
+      "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
     ],
     responsive: {
       0: {
@@ -106,12 +100,20 @@ $(document).ready(function () {
           "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
         ],
       },
-      768: {
+      650: {
         items: 3,
-        margin: 15, // Adjust the margin for medium-sized screens
+        margin: 10, // Adjust the margin for medium-sized screens
         navText: [
-          "<div class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></div>",
-          "<div class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></div>",
+          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
+          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
+        ],
+      },
+      1024: {
+        items: 4,
+        margin: 20, // Adjust the margin for larger screens
+        navText: [
+          "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",
+          "<button class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></button>",
         ],
       },
       1220: {
@@ -157,9 +159,6 @@ $(document).ready(function () {
       },
     },
   });
-});
-
-$(document).ready(function () {
   // Function to check if the footer is in the viewport
   function isFooterVisible() {
     var footer = $("footer");
@@ -178,3 +177,5 @@ $(document).ready(function () {
     }
   });
 });
+
+
