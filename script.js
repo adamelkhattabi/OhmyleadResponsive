@@ -35,6 +35,8 @@ $(document).ready(function () {
       "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
       "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
     ],
+    autoplay: true, // Add this option
+    autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
     loop: true,
     nav: true,
     dots: false, // Enable dots
@@ -79,6 +81,8 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     margin: 20,
+    autoplay: true, // Add this option
+    autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
     navText: [
       "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
       "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
@@ -132,8 +136,10 @@ $(document).ready(function () {
     items: 3,
     loop: true,
     nav: true,
-    dots: true, // Enable dots
+    dots: true,
     margin: 17,
+    autoplay: true, // Add this option
+    autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
     navText: [
       "<button class='custom-prev-last'><img src='images/arrow-left.svg' alt='Previous'></button>",
       "<button class='custom-next-last'><img src='images/arrow-right.svg' alt='Next'></button>",
