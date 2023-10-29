@@ -311,7 +311,17 @@
 }
 
 @media screen and (max-width: 769px) {
+ .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s; /* Add a smooth transition for the header */
+}
 
+.hide-header {
+  transform: translateY(-80%); /* Adjust the percentage to control how much of the header is visible */
+}
   
   .analytics-responsive h2 {
     text-align: left;
@@ -1511,6 +1521,17 @@ h4 {
 
 
 @media screen and (max-width: 576px)  {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s; /* Add a smooth transition for the header */
+}
+
+.hide-header {
+  transform: translateY(-80%); /* Adjust the percentage to control how much of the header is visible */
+}
   .content-video h3 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburgerIcon = document.querySelector(".hamburger-icon");
   const closeMenuIcon = document.querySelector(".close-menu-icon");
   const mainNavList = document.querySelector(".main-nav-list");
+  const header = document.querySelector(".header");
 
   hamburgerIcon.addEventListener("click", function () {
     mainNavList.classList.toggle("active");
@@ -25,7 +26,35 @@ document.addEventListener("DOMContentLoaded", function () {
     closeMenuIcon.style.display = "none";
     hamburgerIcon.style.display = "block";
   });
+
+  let lastScrollTop = 0;
+  const headerHeight = header.clientHeight; // Get the height of the header
+
+  // Function to check if the footer is in the viewport
+  function isFooterVisible() {
+    var footer = $("footer");
+    var windowHeight = $(window).height();
+    var scrollTop = $(window).scrollTop();
+    var footerTop = footer.offset().top;
+    return footerTop - 10 < scrollTop + windowHeight;
+  }
+
+  // Toggle the class to hide the header when scrolling down
+  $(window).scroll(function () {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      // Scrolling down
+      if (!isFooterVisible()) {
+        header.style.transform = `translateY(-${headerHeight}px)`;
+      }
+    } else {
+      // Scrolling up
+      header.style.transform = "translateY(0)";
+    }
+    lastScrollTop = st;
+  });
 });
+
 
 $(document).ready(function () {
   // Initialize the carousels
