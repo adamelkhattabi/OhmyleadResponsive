@@ -1727,21 +1727,27 @@ display: flex;
 /* CSS maxwidth images *//* CSS maxwidth images *//* CSS maxwidth images */
 
 .reminder-svg-img {
-  max-width: 100%;
+  width: 100%;
 }
 .reminder-svg-img {
-  max-width: 100%;
+  width: 100%;
 }
 .integration-img {
-  max-width: 100%;
+width: 100%;
 }
 .sharing-svg-img {
-  max-width: 100%;
+  width: 100%;
   padding-top: 41px;
   padding-bottom: 41px;
  
 }
-
+.integration-section-responsive {
+  padding-top: 95px;
+}
+.integration-section-responsive h2 {
+  text-align: left;
+  padding-top: 0;
+}
 .line {
   margin: 0 auto;
   background: rgba(104, 104, 104, 0.18);

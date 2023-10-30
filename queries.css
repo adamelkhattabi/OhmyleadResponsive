@@ -362,13 +362,17 @@
   }
 }
 @media screen and (min-width: 770px) {
+  
   .address2 {
     display: none;
   }
   .management.video-bottom-text-mobile {
     display: none;
   }
-  
+  .analytics-responsive h2 {
+    text-align: left;
+    padding-bottom: 42px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -2415,8 +2419,7 @@ h4 {
   padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-right: 1.25rem;
   padding-bottom: 95px;
 }
 .integration-header{
@@ -2603,6 +2606,10 @@ h4 {
 
 @media screen and (max-width: 390px) {
   
+  h2 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
    .contacts-responsive h2 {
     text-align: left;
   }
@@ -2688,6 +2695,8 @@ h4 {
 
 .button-blue {
   font-size: 14px !important;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .guidance-header {
