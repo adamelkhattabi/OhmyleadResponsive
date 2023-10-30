@@ -459,6 +459,29 @@ margin: 0 204px;
   line-height: 34px; /* 242.857% */
   padding-bottom: 144px;
 }
+.video-bottom-text-web{
+  margin-top: 5px;
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; 
+  padding-bottom: 144px;
+  
+}
+.video-bottom-text-mobile{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 242.857% */
+  padding-bottom: 144px;
+}
 
 /**************************/
 /* Services */
@@ -753,7 +776,6 @@ line-height: 56px;
   overflow: hidden;
 }
 .lead-web {
-  width: 100%;
   overflow: hidden;
 }
 

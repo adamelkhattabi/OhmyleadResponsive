@@ -1,5 +1,11 @@
 
 @media (min-width: 1023px){
+  .button-pink-easy {
+    margin-top: 60px;
+  }
+  .management-content {
+    gap: 0px;
+  }
   .contacts h3 {
     text-align: left;
   }
@@ -168,6 +174,22 @@
   }
   
 }
+@media  (min-width: 1200px) {
+  .strategy{
+    gap: 9rem;
+  }
+  .strategy-pic {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1024px) and (max-width:1200px) {
+  .strategy{
+    gap: 9rem;
+  }
+  .strategy-pic {
+    max-width: 100%;
+  }
+}
 
 @media (min-width: 1024px) and (max-width:1300px) {
   .source {
@@ -199,7 +221,7 @@
   }
   .strategy {
     padding-right: 2.25rem;
-    gap: 20px;
+  
   }
   .analytic {
     padding-left: 2.25rem;
@@ -301,16 +323,61 @@
     justify-content: center;
     align-items: center;
   }
+  .last-text {
+    padding-top: 28px;
+  }
+  .management-text {
+    padding-top: 28px;
+  }
+  .card-h {
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
+ 
+}
+@media  (min-width: 1024px) and (max-width: 1200px) {
+  .card-h {
+    font-size: 16px;
+   }
+   .card-text {
+    font-size: 15px;
+   }
+   
 }
 
-
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+  .management h2 {
+    padding-top: 95px;
+    padding-left: 1.25rem;
+  }
+  .management .management-image-resp {
+    padding-bottom: 40px !important;
+    padding-top: 50px !important;
+  }
+  .video-bottom-text-web  {
+    display: none !important;
+  }
+  .management-section {
+    padding-bottom: 0px !important;
+  }
+}
 @media screen and (min-width: 770px) {
   .address2 {
     display: none;
   }
+  .management.video-bottom-text-mobile {
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 769px) {
+  .video-bottom-text-mobile {
+    padding-bottom: 0px;
+  }
+  .video-bottom-text-web {
+    display: none;
+  }
  .header {
   position: fixed;
   top: 0;
@@ -482,12 +549,18 @@ h4 {
   
   
 }
+@media screen and (min-width: 577px) and (max-width: 769px) {
+  .management-section {
+      padding-bottom: 95px !important;
+    }
+}
 
 
 @media screen and (min-width: 577px) and (max-width: 1023px) {
     .management-image {
       display: none;
     }
+    
     
     .strategy-section {
       display: none;
@@ -1207,12 +1280,11 @@ h4 {
 .management-section {
   padding: 0;
   margin: 0;
-  padding-bottom: 105px;
   background-color: #00B6F90F;
 }
 .management .management-image-resp {
-  padding-top: 60px !important;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .management {
@@ -2233,7 +2305,7 @@ h4 {
 .management-section {
   padding: 0;
   margin: 0;
-  padding-bottom: 105px;
+  padding-bottom: 95px;
   background-color: #00B6F90F;
 }
 
@@ -2529,7 +2601,8 @@ h4 {
 
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
+  
    .contacts-responsive h2 {
     text-align: left;
   }
@@ -2605,7 +2678,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  padding: 20px 24px;
   margin-top: 27px;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
