@@ -816,8 +816,8 @@ h1{
 
 .main-nav-list {
   position: fixed;
-  left: -100%;
-  top: 0;
+  left: 100%;
+  top: 35px;
   gap: 0;
   flex-direction: column;
   background-color: #FFFFFF;
@@ -1874,8 +1874,8 @@ h1{
 
 .main-nav-list {
   position: fixed;
-  left: -100%;
-  top: 0;
+  left: 100%;
+  top: 35px;
   gap: 0;
   flex-direction: column;
   background-color: #FFFFFF;
