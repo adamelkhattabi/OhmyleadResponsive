@@ -569,7 +569,11 @@ h4 {
       padding-bottom: 95px !important;
     }
 }
-
+@media screen and (max-width: 768px) {
+  .reminder-svg-img {
+    max-width: 100%;
+  }
+}
 
 @media screen and (min-width: 577px) and (max-width: 1023px) {
     .management-image {
@@ -1277,9 +1281,7 @@ h4 {
   display: none; 
 }
 
-.reminder-svg-img {
-  max-width: 100%;
-}
+
 
 .reminder-mobile {
   width: 100%;
