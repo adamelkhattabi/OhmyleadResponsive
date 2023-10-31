@@ -857,6 +857,11 @@ line-height: 28px; /* 140% */
     align-items: center;
     gap: 93px;
 }
+.reminder-svg-img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .reminder-header{
 color: #FF456D;

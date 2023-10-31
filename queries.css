@@ -1278,7 +1278,7 @@ h4 {
 }
 
 .reminder-svg-img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .reminder-mobile {
