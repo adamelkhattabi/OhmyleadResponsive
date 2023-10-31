@@ -163,8 +163,16 @@
   }
 }
 @media  (min-width: 1440px) {
+  
+   
   .owl-carousel.owl-theme.first-carousel {
-    margin-left: 151px;
+    margin-left: 9.2%;
+  }
+  .custom-next {
+    right: 42px;
+  }
+  .owl-carousel.owl-theme.first-carousel {
+    width: 95%;
   }
   .analytic {
     gap: 136px;
@@ -332,6 +340,9 @@
   .card-h {
     padding-top: 20px;
     padding-bottom: 8px;
+  }
+  .video-bottom-text-mobile {
+    display: none;
   }
  
 }
