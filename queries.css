@@ -1222,7 +1222,8 @@ h4 {
 }
 
 .contacts-mobile {
-  width: 78%;
+  background-size: cover;
+  max-width: 100%;
   padding-top: 58px;
 }
 
@@ -2265,6 +2266,7 @@ h4 {
 .contacts-mobile {
   max-width: 100%;
   padding-top: 58px;
+  background-size: cover;
 }
 
 .contacts-responsive h3 {
