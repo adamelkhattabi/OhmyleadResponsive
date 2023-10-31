@@ -178,8 +178,14 @@ padding: 17px 29px;
     
   
 
-    
+   
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .hero-content{
   padding-bottom: 10rem;
 }
