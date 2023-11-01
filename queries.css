@@ -466,7 +466,9 @@ body{
   }
 }
 @media screen and (min-width: 770px) {
-  
+  .sign-in {
+    display: none;
+  }
   .address2 {
     display: none;
   }
@@ -955,6 +957,8 @@ h1{
   top: 35px;
   gap: 0;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #FFFFFF;
   width: 100%;
   padding-left: 18px;
@@ -2050,6 +2054,8 @@ h1{
   top: 35px;
   gap: 0;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #FFFFFF;
   width: 100%;
   padding-left: 18px;
@@ -2896,8 +2902,10 @@ h4 {
   text-align: center
 }
 
-.button-pink {
-  display: none;
+.nav-buttons {
+    position: absolute;
+    right: 56px;
+    top: 14px;
 }
 .custom-prev {
     left: 1.25rem;
