@@ -96,8 +96,12 @@ a {
 .main-nav-list{
   list-style: none;
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
   gap:16px
+}
+ul{
+  margin: 0;
 }
 .main-nav-link{
 cursor: pointer;
@@ -123,6 +127,7 @@ line-height: normal;
 .main-nav-link:active {
   transition: all 0.3s;
   color: #505050;
+  text-decoration: none;
 }
 .nav-login {
   color: #FFF;
@@ -140,6 +145,7 @@ line-height: normal;
  {
   transition: all 0.3s;
   color: #505050;
+  text-decoration: none;
 }
 
 .button-pink {
@@ -158,12 +164,14 @@ line-height: normal;
 padding: 17px 29px;
 }
 .button-pink:hover {
+  text-decoration: none;
   cursor: pointer;
   border: none;
   color: #FFF;
   border-radius: 27.5px;
   background: #F03E64;
   transition: all 0.3s;
+
 
 }
 .nav-buttons{
@@ -1021,6 +1029,11 @@ width: 100%;
 }
 
 .button-pink-mobile:hover{
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  border-radius: 27.5px;
   background: #F03E64;
   transition: all 0.3s;
   
@@ -1050,11 +1063,17 @@ width: 100%;
   text-decoration: none;
   padding: 20px 30px;
   margin-top: 44px;
+  text-decoration: none;
   width: max-content;
  
 }
 .button-pink-easy:hover{
-  background: #F03E64;  
+ text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  border-radius: 27.5px;
+  background: #F03E64;
   transition: all 0.3s;
 }
 
@@ -1185,6 +1204,7 @@ transition: background-color 0.3s, color 0.3s;
   background-color: #00B6F9;
   color: #fff; 
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 /**************************/
@@ -1591,6 +1611,7 @@ z-index: 9999;
 .guidance-button:hover{
   transition: all 0.3s;
   background-color: #F03E64;
+  text-decoration: none;
   
 }
 .guidance-button-container{
