@@ -1682,6 +1682,12 @@ h4 {
 
 
 @media screen and (max-width: 576px)  {
+  .services{
+    padding: 0;
+  }
+  .button-container-center-second {
+    display: none;
+  }
 .header {
   position: fixed;
   top: 0;
