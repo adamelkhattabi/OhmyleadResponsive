@@ -96,10 +96,7 @@ $(document).ready(function () {
 
       1200: {
         items: 4,
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right.svg' alt='Next'></div>",
-        ],
+        nav: false,
       },
     },
   });
@@ -144,18 +141,12 @@ $(document).ready(function () {
       1024: {
         items: 4,
         margin: 20, // Adjust the margin for larger screens
-        navText: [
-          "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",
-          "<button class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></button>",
-        ],
+        nnav: false,
       },
       1220: {
         items: 6,
         margin: 20, // Adjust the margin for larger screens
-        navText: [
-          "<button class='custom-prev2'><img src='images/arrow-left.svg' alt='Previous'></button>",
-          "<button class='custom-next2'><img src='images/arrow-right.svg' alt='Next'></button>",
-        ],
+        nav: false,
       },
     },
   });
@@ -169,10 +160,7 @@ $(document).ready(function () {
     margin: 17,
     autoplay: true, // Add this option
     autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
-    navText: [
-      "<button class='custom-prev-last'><img src='images/arrow-left.svg' alt='Previous'></button>",
-      "<button class='custom-next-last'><img src='images/arrow-right.svg' alt='Next'></button>",
-    ],
+    nav: false,
     responsive: {
       0: {
         items: 1.2, // Display 1 item on small screens (less than 600px wide)

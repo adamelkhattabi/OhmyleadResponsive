@@ -1,5 +1,8 @@
 
 @media (min-width: 1023px){
+  .management-image-resp2{
+    display: none;
+  }
   .button-pink-easy {
     margin-top: 60px;
   }
@@ -24,10 +27,7 @@
     text-align: left;
   } 
  
-  .lead-text {
-    padding-right: 10px;
-    padding-bottom: 150px;
-  }
+  
  .impact-section {
     overflow: hidden;
 
@@ -63,29 +63,15 @@
     display: none;
   }
   .owl-carousel.owl-theme.first-carousel {
-    max-width: 91%; /* Adjust the maximum width as needed */
     margin:  0; 
     padding: 0; 
-    margin-left: 94px;
     margin-top: 54px;
+    padding-left: 7rem;
   }
   .first-carousel .owl-item {
     width: 100%;
   }
-  .custom-prev {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    left: -87px;
-    top: -1px;
-}
-.custom-next {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 6px;
-    top: -1px;
-}
+
   .leads-responsive{
     display: none;
   }
@@ -163,17 +149,36 @@
   }
 }
 @media  (min-width: 1440px) {
+  .owl-carousel.owl-theme.first-carousel {
+    margin:  0; 
+    padding: 0; 
+    margin-top: 54px;
+    padding-left: 12%;
+  }
+  .item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
+  overflow: hidden;
+  width: 200px !important;
+}
+    .custom-next{
+    right: 20px;
+    top: -32px;
+  }
+  .custom-prev{
+    left: -112px;
+    top: -32px;
+  }
   
-   
-  .owl-carousel.owl-theme.first-carousel {
-    margin-left: 9.2%;
-  }
   .custom-next {
-    right: 42px;
+    right: 76px;
   }
-  .owl-carousel.owl-theme.first-carousel {
-    width: 95%;
-  }
+  
   .analytic {
     gap: 136px;
   }
@@ -189,17 +194,53 @@
   .strategy-pic {
     max-width: 100%;
   }
+  .content-video h2 {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 51px;
+  }
+ 
 }
 @media (min-width: 1024px) and (max-width:1200px) {
+  .content-video h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 51px;
+  }
+  .services h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
   .strategy{
     gap: 9rem;
   }
   .strategy-pic {
     max-width: 100%;
   }
+    .custom-prev {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: -81px;
+    top: -43px;
+}
+.custom-next {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: -43px;
+}
 }
 
 @media (min-width: 1024px) and (max-width:1300px) {
+  .owl-carousel.owl-theme.first-carousel {
+    margin:  0; 
+    padding: 0; 
+    margin-top: 54px;
+    padding-left: 13%;
+  }
   .source {
     padding-left: 2.25rem;
   }
@@ -240,9 +281,14 @@
     padding-bottom: 92px;
   }
   .management {
-    padding-top: 92px;
+
     padding-left: 2.25rem;
-    padding-bottom:92px;
+  
+
+  }
+  .management-section {
+    padding-top: 90px;
+    padding-bottom: 0px;
 
   }
   .accordion-question {
@@ -326,6 +372,12 @@
   }
 }
 @media (min-width: 1024px) {
+  .custom-next{
+    display: none !important;
+  }
+  .custom-prev{
+    display: none !important;
+  }
   .button-container-center {
     display: flex;
     justify-content: center;
@@ -344,7 +396,10 @@
   .video-bottom-text-mobile {
     display: none;
   }
- 
+  .button-container-2 {
+    display: none;
+  }
+  
 }
 @media  (min-width: 1024px) and (max-width: 1200px) {
   .card-h {
@@ -914,7 +969,6 @@ h1{
 }
 
 .owl-carousel.owl-theme.first-carousel {
-  margin: 10% 0; 
   padding: 0; 
 }
 
@@ -936,7 +990,8 @@ h1{
 .owl-carousel.first-carousel .owl-item,
 .owl-carousel.second-carousel .owl-item {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  width: 150px; 
 }
 
 .owl-carousel.owl-theme.first-carousel,
@@ -1974,7 +2029,7 @@ h1{
 }
 
 .owl-carousel.owl-theme.first-carousel {
-  margin: 10% 0; 
+
   padding: 0; 
 }
 
@@ -1999,10 +2054,7 @@ h1{
   justify-content: center; 
 }
 
-.owl-carousel.owl-theme.first-carousel,
-.owl-carousel.owl-theme.second-carousel{
-  max-width: 100%;
-}
+
 
 .hero-mobile{
   display: none;
