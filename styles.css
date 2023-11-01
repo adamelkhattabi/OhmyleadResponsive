@@ -79,6 +79,7 @@ a {
 .logo{
   cursor: pointer;
   padding-left: 6rem;
+  height: 60px;
  }
  .logo-col1{
   cursor: pointer;
@@ -1793,5 +1794,4 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
 }
