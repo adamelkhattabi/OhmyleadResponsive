@@ -667,18 +667,25 @@ h4 {
   .reminder-svg-img {
     max-width: 100%;
     height: auto;
+    margin-left: 1.25rem;
   }
+  .analytics-responsive .line {
+    margin-right: 1.25rem;
+  }
+ 
 }
 
 @media screen and (min-width: 577px) and (max-width: 1023px) {
-  .sharing-responsive .line {
-  margin-left: 1.25rem;
 
+  .sharing-responsive .line {
+    margin-left: 1.25rem;
   }
+
   .content-video {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   .video-bottom-text{
     padding-bottom: 0;
   } 
@@ -686,49 +693,65 @@ h4 {
     padding-bottom: 0;
     padding-top: 0;
   } 
+
   .management-image {
       display: none;
-    }
-    
-    
-    .strategy-section {
+  }
+
+  .strategy-section {
       display: none;
-    }
-    .button-pink-easy {
+  }
+
+  .button-pink-easy {
       display: none;
-    }
-   .testimonial-footer {
+  }
+
+  .testimonial-footer {
     padding: 0;
   }
   
   .footer-container{
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 92px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 92px;
  }
+
   .footer-nav {
     gap: 1px;
     padding-top: 18px;
   }
+
   .features-section {
     display: none;
   }
+
   .privacy-section {
     display: none;
   }
+
   .leads-responsive h2 {
     padding-right: 1.25rem;
-    text-align: center;
+    text-align: left;
     padding-top: 18px;
   }
   .leads-responsive h3 {
     padding-top: 95px;
     padding-right: 1.25rem;
-    text-align: center;
+    text-align: left;
+  }
+  .contacts-responsive h2 {
+    padding-right: 1.25rem;
+    text-align: left;
+    padding-top: 18px;
+  }
+  .contacts-responsive h3 {
+    padding-top: 95px;
+    padding-right: 1.25rem;
+    text-align: left;
   }
   .guidance-button-container {
     padding-bottom: 95px;
@@ -1150,7 +1173,8 @@ h3 {
   line-height: normal;
   text-transform: uppercase;
 }
-.services h3{
+.services h3 {
+  text-align: left !important;
   margin: 0;
   padding-top: 95px;
   color: #00B6F9;
@@ -1161,24 +1185,17 @@ h3 {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-}
-.services h2 { 
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
-h4 {
-  padding: 0;
-  color: #181824;
-  padding-top: 9px;
-  text-align: center;
-  font-family: Plus Jakarta Sans;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+.services h2 { 
   text-align: left;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
+
+
 
 .video-container {
   margin-top: 50px; 
@@ -1321,15 +1338,8 @@ h4 {
   display: none; 
 }
 
-.contacts-responsive {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-.contacts-responsive h4 {
-  text-align: left !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
+
+
 
 .button-container {
   margin: 0;
@@ -1344,8 +1354,16 @@ h4 {
 
 .contacts-responsive h3 {
   padding-top: 95px;
-  
+  padding-right: 1.25rem;
+  text-align: left;
+  padding-left: 1.25rem;
 }
+.contacts-responsive h2 {
+  padding-right: 1.25rem;
+  text-align: left;
+  padding-left: 1.25rem;
+}
+
 
 .contact-paragraphe {
   color: #1E1E1E;
@@ -1356,6 +1374,7 @@ h4 {
   line-height: 28px;
   text-align: left;
   padding-left: 1.25rem;
+  padding-right: 1.25rem;
 
   
 }
@@ -1516,7 +1535,7 @@ h4 {
 
 .analytics-responsive {
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
+ 
 }
 
 .analytics-mobile {
@@ -1527,14 +1546,13 @@ h4 {
 .analytics-responsive h3 {
   padding-top: 95px;
   text-align: left;
+  padding-right: 1.25rem;
+}
+.analytics-responsive h2 {
+  text-align: left;
+  padding-right: 1.25rem;
 }
 
-.analytics-responsive h4 {
-  padding: 0 !important;
-  padding-top: 15px !important;
-  padding-bottom: 42px !important;
-  text-align: left !important;
-}
 
 .integration-section{
   display: none;
@@ -1724,24 +1742,27 @@ h4 {
   box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.02);
 }
   
-  .leads {
-      display: none;
-    }
-    .header {
-      padding: 0;
-      margin: 0;
-      height: 7.5rem;
-      padding-left: 1rem;
-      position: fixed;
-      background: linear-gradient(27deg, #1D2CAB -2.26%, #00BAE3 100%);
-    }
-    .section-hero-mobile {
-      background: linear-gradient(107deg, #1D2CAB 0.74%, #00BAE3 100%);
-    }
+.leads {
+  display: none;
+}
+.header {
+  padding: 0;
+  margin: 0;
+  height: 7.5rem;
+  padding-left: 1rem;
+  position: fixed;
+  background: linear-gradient(27deg, #1D2CAB -2.26%, #00BAE3 100%);
+}
+.section-hero-mobile {
+  background: linear-gradient(107deg, #1D2CAB 0.74%, #00BAE3 100%);
+}
+ 
 }
 
-
 @media screen and (max-width: 576px)  {
+  .owl-prev {
+    display: none;
+  }
   .content-video {
     padding-top: 0;
     padding-bottom: 0;
@@ -2556,7 +2577,6 @@ h4 {
 
 .analytics-responsive {
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .analytics-mobile {
@@ -2568,19 +2588,32 @@ h4 {
   padding-top: 95px;
   text-align: left;
   padding-left: 0;
+    padding-right: 1.25rem;
 }
 .analytics-responsive h2 {
   
   text-align: left;
   padding-left: 0 !important;
+    padding-right: 1.25rem;
+}
+.analytics-responsive .line {
+  margin-right: 1.25rem;
+}
+.sharing-responsive .line {
+  margin-left: 1.25rem;
+}
+.contacts-responsive .line {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .analytics-responsive .contact-paragraphe {
   
   text-align: left;
   padding-left: 0 !important;
+    padding-right: 1.25rem;
 }
 .analytics-responsive .lead-testimonial {
-  
+    padding-right: 1.25rem;
   text-align: left;
   padding-left: 0 !important;
 }
@@ -2622,7 +2655,7 @@ h4 {
 }
 
 .integration-img {
-  padding: 58px 1.25rem 83px 1.25rem;
+  padding: 58px 0 83px 0;
 }
 
 .button-blue {
@@ -2783,6 +2816,15 @@ h4 {
 
 @media screen and (max-width: 390px) {
   
+  .text-b2 {
+    font-size: 14px;
+  }
+  .spanb2 {
+    font-size: 14px;
+  }
+  .imp-card-text{
+    font-size: 14px;
+  }
   h2 {
     font-size: 30px !important;
     line-height: 40px !important;
@@ -2934,4 +2976,64 @@ h4 {
     font-size: 15px;
   }
 }
+@media (max-width: 330px) {
+  .avatar{
+    display: none;
+  }
+  .user-info{
+    padding: 0;
+  }
+}
   
+/**********PRICING*********/
+/**********PRICING*********/
+/**********PRICING*********/
+/**********PRICING*********/
+/**********PRICING*********/
+/**********PRICING*********/
+/**********PRICING*********/
+
+@media  (max-width:1023px) {
+  
+  
+  .background {
+    padding-top: 4.81rem;
+  }
+ 
+  
+  
+}
+@media (max-width:768px) {
+  .plan-text{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .plan-text-2{
+    font-size: 14px;
+  }
+  .pricing li{
+    font-size: 15px;
+  }
+  
+}
+
+@media  (min-width:893px) and (max-width:1025px)  {
+  
+  
+  .background {
+    padding-top: 4.81rem;
+  }
+
+  
+}
+
+
+@media  (max-width:893px)  {
+  
+  
+  .background {
+    padding-top: 4.81rem;
+  }
+  
+  
+}

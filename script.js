@@ -94,7 +94,7 @@ $(document).ready(function () {
         ],
       },
 
-      1200: {
+      1024: {
         items: 4,
         nav: false,
       },
@@ -155,7 +155,6 @@ $(document).ready(function () {
   $(".last-carousel").owlCarousel({
     items: 3,
     loop: true,
-    nav: true,
     dots: true,
     margin: 17,
     autoplay: true, // Add this option
@@ -163,19 +162,24 @@ $(document).ready(function () {
     nav: false,
     responsive: {
       0: {
+        nav: false,
         items: 1.2, // Display 1 item on small screens (less than 600px wide)
       },
       400: {
+        nav: false,
         items: 1.2, // Display 1 item on small screens (less than 600px wide)
       },
       600: {
+        nav: false,
         items: 1.6, // Display 2 items on medium-sized screens (768px wide and above)
       },
       800: {
+        nav: false,
         items: 2, // Display 2 items on medium-sized screens (768px wide and above)
       },
 
       992: {
+        nav: false,
         margin: 0,
 
         items: 3, // Display 3 items on large screens (992px wide and above)
@@ -199,6 +203,24 @@ $(document).ready(function () {
       $(".header").removeClass("hide-header");
     }
   });
+});
+
+document.getElementById("dropdown-btn").addEventListener("click", function () {
+  var dropdownContent = document.getElementById("dropdown-content");
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+});
+
+// Close the dropdown when clicking outside of it
+window.addEventListener("click", function (event) {
+  var dropdownContent = document.getElementById("dropdown-content");
+  var dropdownButton = document.getElementById("dropdown-btn");
+  if (event.target !== dropdownButton && event.target !== dropdownContent) {
+    dropdownContent.style.display = "none";
+  }
 });
 
 

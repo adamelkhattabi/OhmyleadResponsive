@@ -46,6 +46,35 @@ p{
   margin-top: 9.6rem;
 } */
 
+.A {
+  display: flex;
+  flex-direction: column;
+
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.A1 {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.A2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.B {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  height: 200px;
+  background-color: yellow;
+  margin: 0 auto;
+}
 /**************************/
 /* HEADER */
 /**************************/
@@ -183,6 +212,338 @@ padding: 17px 29px;
 .header.hide-header {
     display: none;
     /* Add any other styles to hide the header */
+}
+
+
+/**************************/
+/* Pricing */
+/**************************/
+
+.background {
+  background: linear-gradient(107deg, #1D2CAB 0.74%, #00BAE3 100%);
+  padding-top: 11.81rem;
+  padding-bottom: 10.375rem;
+  position: relative;
+}
+.pricing {
+  padding-bottom: 195px;
+}
+.pricing h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; 
+}
+.pricing h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+/* Styling for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+/* Change the background color when hovering over the dropdown links */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.pricing .pro-plan ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 5px; /* Add some spacing between the marker and text */
+}
+.pricing li {
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  list-style: none;
+}
+
+.pricing li::before {
+  content: "•"; /* Use a dot as a custom marker */
+  color: black; /* Change the color of the dots */
+  margin-right: 5px; /* Add spacing between the dot and the text */
+}
+.pricing-cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+  position: absolute;
+  top: 19.5rem;
+}
+
+.solo-plan{
+  height: 100%;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
+  
+}
+.to {
+  margin-top: auto;
+}
+.pro-plan{
+  height: 100%;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
+}
+.plan-header{
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 39px;
+}
+.plan-mid{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+.solo-plan .plan-header {
+  background: rgba(18, 157, 74, 0.11);
+  color: #129D4A;
+}
+.pro-plan .plan-header {
+  background: rgba(255, 69, 109, 0.07);
+  color: #FF456D;
+}
+.plan-price {
+  font-family: Plus Jakarta Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.solo-plan .plan-price{
+  color: #129D4A;
+}
+.pro-plan .plan-price{
+  color: #FF456D;
+}
+.plan-price span{
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.plan-text {
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 21px;
+  padding-bottom: 19px;
+}
+.plan-text-2{
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.plan-list-header{
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.underline {
+  cursor: pointer;
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.underline:hover {
+  font-weight: 700;
+}
+.plan-button {
+  border-radius: 34.5px;
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+
+.solo-plan .plan-button{
+  background: #129D4A;
+  margin-bottom: 71px;
+ 
+}
+.pro-plan .plan-button{
+  background: #FF456D;
+}
+.solo-plan .plan-text-2{
+  
+}
+.pro-plan .plan-text-2{
+  
+}
+
+
+.pro-plan ul {
+  
+}
+.plan-text-3{
+  color: #757884;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 31px;
+  padding-top: 12px;
+}
+/* Custom CSS to style the list and add arrow background */
+.custom-list {
+  list-style: none; /* Remove default bullets */
+  padding-left: 20px; /* Add some spacing between the marker and text */
+}
+
+.custom-list li {
+  position: relative; 
+  padding-left: 10px; 
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; 
+}
+.plan-list-header{
+  padding-bottom: 15px;
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.custom-list li::before {
+  content: "•"; 
+  color: black; 
+  margin-right: 5px; 
+}
+.arrow-icon{
+  width: 36px;
+  height: 38px;
+  transform: rotate(-90deg);
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
+.custom-plan {
+  margin: 0 auto;
+  border-radius: 21px;
+  background: #FFF;
+  box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 65rem;
+  padding-right: 203px;
+  padding-left: 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+ 
+  
+
+  
+  
+}
+.custom-header{
+  color: #0D64B5;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.custom-text {
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 16px;
+  padding-bottom: 36px;
+}
+.button-custom {
+  border-radius: 34.5px;
+  background: #0D64B5;
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 20px 65px;
+  margin-top: 18px;
+}
+.left-custom {
+  padding-bottom: 70px;
+  padding-top: 57px;
+}
+.right-custom {
+  padding-top: 44px;
+}
+.pricing .line {
+  margin-top: 21px;
+  margin-bottom: 27px;
 }
 /**************************/
 /* HERO SECTION */
@@ -1343,9 +1704,7 @@ font-weight: 400;
 line-height: 28px;
 
 }
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-    display: block !important;  
-}
+
 /* Style the dots container */
 .owl-dots {
   display: block !important; 
@@ -1713,7 +2072,10 @@ display: flex;
 
 
 
-
+.twitter-logo-rsp {
+  min-height: 30px;
+  min-width: 30px;
+}
 .testimonial-card2 {
     width: 401px;
     height: 416px;
@@ -1739,7 +2101,6 @@ display: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 
 .avatar img {
@@ -1763,10 +2124,6 @@ display: flex;
     margin: 0;
 }
 
-.twitter-logo img {
-    width: 30px;
-    height: 30px;
-}
 
 .logo-footer-web{
   cursor: pointer;
