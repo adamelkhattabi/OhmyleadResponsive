@@ -2993,13 +2993,80 @@ h4 {
 /**********PRICING*********/
 /**********PRICING*********/
 
+
+@media (max-width:1060px) and (min-width:1024px) {
+  .custom-plan {
+    gap: 20px;
+  }
+
+  .plan-text{
+    font-size: 16px;
+  }
+  .plan-text-2{
+    font-size: 14px;
+  }
+  .plan-price {
+    font-size: 50px;
+  }
+  .pricing li {
+    font-size: 15px;
+  }
+  .plan-list-header {
+    font-size: 15px;
+  }
+  .or{
+    font-size: 20px;
+  }
+  .link-now {
+    font-size: 20px;
+
+  }
+}
+@media (min-width:1024px) {
+  .button-custom-mobile{
+    display: none;
+  }
+}
 @media  (max-width:1023px) {
   
   
   .background {
-    padding-top: 4.81rem;
+    padding-top: 5rem;
   }
- 
+ .pricing-cards {
+  grid-template-columns: repeat(1,1fr);
+ }
+ .custom-plan {
+  grid-template-columns: repeat(1,1fr); 
+  gap:0;
+  padding-left: 0;
+ }
+ .button-custom-mobile {
+  display: block;
+ }
+ .button-custom {
+  display: none;
+ }
+ .left-custom {
+  padding: 0;
+  
+ }
+ .custom-header{
+  background: rgba(13, 100, 181, 0.11);
+
+    color: #0D64B5;
+font-family: Plus Jakarta Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-left: 39px;
+ }
+
   
   
 }
@@ -3017,7 +3084,7 @@ h4 {
   
 }
 
-@media  (min-width:893px) and (max-width:1025px)  {
+@media  (min-width:893px) and (max-width:1023px)  {
   
   
   .background {
@@ -3037,3 +3104,4 @@ h4 {
   
   
 }
+

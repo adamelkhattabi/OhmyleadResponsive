@@ -227,6 +227,8 @@ padding: 17px 29px;
 }
 .pricing {
   padding-bottom: 195px;
+  height: 123rem;
+  position: relative;
 }
 .pricing h2 {
   color: #FFF;
@@ -248,26 +250,117 @@ padding: 17px 29px;
   text-transform: uppercase;
 }
 /* Styling for the dropdown content */
-.dropdown-content {
+#dropdownContent {
   display: none;
   position: absolute;
+  border: 1px solid #129D4A;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: inherit;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 14rem;
+  border-radius: 20px;
+  top: 17rem;
+  width: 6.5rem;
+}
+#dropdownContent2 {
+
+  display: none;
+  position: absolute;
+  border: 1px solid #E9E9E9;
+  background-color: #f9f9f9;
+  min-width: inherit;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+  top: 3.5rem;
+  width: 6.5rem;
+}
+#dropdown {
+  white-space: nowrap;
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid #129D4A;
+  border-radius: 36px;
+  padding: 0px 16px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 47px;
+}
+#dropdown2 {
+  white-space: nowrap;
+  color: #757884;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid #E9E9E9;
+  border-radius: 36px;
+  padding: 0px 16px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px;
+}
+#dropdown::after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background: url('images/Vector29.svg') no-repeat; /* Set the path to your SVG */
+  background-size: contain;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  
+}
+#dropdown2::after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background: url('images/Vector29.svg') no-repeat; /* Set the path to your SVG */
+  background-size: contain;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  
 }
 
-/* Style the dropdown links */
-.dropdown-content a {
+.dropdown-container { 
+  position: relative;
+}
+.dropdown-container2 { 
+  position: relative;
+}
+#dropdownContent a {
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  color: #333;
 }
 
-/* Change the background color when hovering over the dropdown links */
-.dropdown-content a:hover {
-  background-color: #ddd;
+#dropdownContent a:hover {
+  background-color: #f1f1f1;
+  border-radius: 20px;
 }
+#dropdownContent2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdownContent2 a:hover {
+  background-color: #f1f1f1;
+}
+
+.plan-text-2:hover #dropdownContent {
+  display: block;
+}
+
 .pricing .pro-plan ul {
   list-style: none; /* Remove default bullets */
   padding-left: 5px; /* Add some spacing between the marker and text */
@@ -291,12 +384,14 @@ padding: 17px 29px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 18px;
-  position: absolute;
   top: 19.5rem;
 }
 
 .solo-plan{
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
   background: #FFF;
   box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
@@ -305,8 +400,35 @@ padding: 17px 29px;
 .to {
   margin-top: auto;
 }
+.link-now {
+  color: #1E1E1E;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.or {
+  padding-top: 12px;
+  padding-bottom: 31px;
+  color: #757884;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pro-plan{
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
   background: #FFF;
   box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
@@ -323,9 +445,7 @@ padding: 17px 29px;
   padding-left: 39px;
 }
 .plan-mid{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  
   padding-left: 39px;
   padding-right: 39px;
 }
@@ -420,22 +540,18 @@ padding: 17px 29px;
 .solo-plan .plan-button{
   background: #129D4A;
   margin-bottom: 71px;
+  margin-left: 39px;
+  margin-right: 39px;
  
 }
 .pro-plan .plan-button{
   background: #FF456D;
-}
-.solo-plan .plan-text-2{
-  
-}
-.pro-plan .plan-text-2{
-  
+  margin-left: 39px;
+  margin-right: 39px;
 }
 
 
-.pro-plan ul {
-  
-}
+
 .plan-text-3{
   color: #757884;
   text-align: center;
@@ -486,22 +602,26 @@ padding: 17px 29px;
   background-repeat: no-repeat;
 }
 .custom-plan {
-  margin: 0 auto;
+  
+  margin-top: 71px;
   border-radius: 21px;
   background: #FFF;
   box-shadow: 0px 22px 44px 0px rgba(0, 0, 0, 0.06);
-  margin-top: 65rem;
-  padding-right: 203px;
+  gap: 60px;
   padding-left: 72px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
- 
+}
+ .pricing-cards-container {
+  margin: 0 11%;
+  position: absolute;
+  top: 21rem;
+ }
   
 
   
   
-}
+
 .custom-header{
   color: #0D64B5;
   font-family: Plus Jakarta Sans;
@@ -534,6 +654,22 @@ padding: 17px 29px;
   padding: 20px 65px;
   margin-top: 18px;
 }
+.button-custom-mobile {
+  border-radius: 34.5px;
+  background: #0D64B5;
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 20px 65px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .left-custom {
   padding-bottom: 70px;
   padding-top: 57px;
@@ -545,6 +681,7 @@ padding: 17px 29px;
   margin-top: 21px;
   margin-bottom: 27px;
 }
+
 /**************************/
 /* HERO SECTION */
 /**************************/

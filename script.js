@@ -205,22 +205,90 @@ $(document).ready(function () {
   });
 });
 
-document.getElementById("dropdown-btn").addEventListener("click", function () {
-  var dropdownContent = document.getElementById("dropdown-content");
-  if (dropdownContent.style.display === "block") {
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.getElementById("dropdown");
+  const dropdownContent = document.getElementById("dropdownContent");
+
+  const option1 = document.getElementById("option1");
+  const option2 = document.getElementById("option2");
+  const option3 = document.getElementById("option3");
+
+  // Toggle the dropdown content when clicking on the dropdown span
+  dropdown.addEventListener("click", function () {
+    dropdownContent.style.display =
+      dropdownContent.style.display === "block" ? "none" : "block";
+  });
+
+  // Close the dropdown when the user clicks outside of it
+  window.addEventListener("click", function (event) {
+    if (!event.target.matches("#dropdown")) {
+      dropdownContent.style.display = "none";
+    }
+  });
+
+  // Event listeners for each option
+  option1.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown.textContent = "250"; // Set the selected option text
+    dropdownContent.style.display = "none"; // Hide the dropdown options
+  });
+
+  option2.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown.textContent = "1000";
     dropdownContent.style.display = "none";
-  } else {
-    dropdownContent.style.display = "block";
-  }
+  });
+
+  option3.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown.textContent = "2500";
+    dropdownContent.style.display = "none";
+  });
 });
 
-// Close the dropdown when clicking outside of it
-window.addEventListener("click", function (event) {
-  var dropdownContent = document.getElementById("dropdown-content");
-  var dropdownButton = document.getElementById("dropdown-btn");
-  if (event.target !== dropdownButton && event.target !== dropdownContent) {
-    dropdownContent.style.display = "none";
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown2 = document.getElementById("dropdown2");
+  const dropdownContent2 = document.getElementById("dropdownContent2");
+  const option4 = document.getElementById("option4");
+  const option5 = document.getElementById("option5");
+  const option6 = document.getElementById("option6");
+  const option7 = document.getElementById("option7");
+
+  // Toggle the dropdown content when clicking on the dropdown span
+  dropdown2.addEventListener("click", function () {
+    dropdownContent2.style.display =
+      dropdownContent2.style.display === "block" ? "none" : "block";
+  });
+
+  // Event listeners for each option in Dropdown 2
+  option4.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown2.textContent = "5000";
+    dropdownContent2.style.display = "none";
+  });
+
+  option5.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown2.textContent = "10k";
+    dropdownContent2.style.display = "none";
+  });
+
+  option6.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown2.textContent = "25k";
+    dropdownContent2.style.display = "none";
+  });
+
+  option7.addEventListener("click", function (event) {
+    event.preventDefault();
+    dropdown2.textContent = "50k";
+    dropdownContent2.style.display = "none";
+  });
+
+  // Close the dropdown when the user clicks outside of it
+  window.addEventListener("click", function (event) {
+    if (!event.target.matches("#dropdown2")) {
+      dropdownContent2.style.display = "none";
+    }
+  });
 });
-
-
