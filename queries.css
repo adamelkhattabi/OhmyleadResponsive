@@ -466,9 +466,8 @@ body{
   }
 }
 @media screen and (min-width: 770px) {
-  .sign-in {
-    display: none;
-  }
+  
+  
   .address2 {
     display: none;
   }
@@ -3023,13 +3022,61 @@ h4 {
   }
 }
 @media (min-width:1024px) {
-  .button-custom-mobile{
+  .sign-in{
+    display: none !important;
+  }
+  .custom-plan .line {
     display: none;
   }
+  .right-custom .plan-button{
+    display: none;
+  }
+  .plan-custom .line{
+    display: none;
+  }
+  
 }
 @media  (max-width:1023px) {
   
+  .pricing h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .line{
+    margin: 0;
+    width: auto;
+    margin-right: 39px;
+    margin-left: 39px;
+  }
+  .custom-plan .custom-text {
+    color: #757884;
+    font-family: Plus Jakarta Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-bottom: 21px;
+   
+  }
+  .right-custom {
+    padding: 0;
+  }
   
+  .right-custom .plan-button{
+    background: #0D64B5;
+    margin-left: 39px;
+    margin-right: 39px;
+    margin-bottom: 71px;
+  }
+  .button-custom{
+    display: none;
+  }
+  
+  .pricing {
+    height: 170rem;
+  }
   .background {
     padding-top: 5rem;
   }
@@ -3041,9 +3088,7 @@ h4 {
   gap:0;
   padding-left: 0;
  }
- .button-custom-mobile {
-  display: block;
- }
+ 
  .button-custom {
   display: none;
  }
@@ -3071,6 +3116,26 @@ text-transform: uppercase;
   
 }
 @media (max-width:768px) {
+  .pricing h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+  }
+  .pricing-cards {
+    gap: 31px;
+  }
+  .or {
+    font-size: 16px;
+  }
+  .link-now {
+    font-size: 16px;
+  }
+  .pricing-cards-container {
+    top: 27rem;
+  }
+  .arrow-icon {
+    display: none;
+  }
   .plan-text{
     font-size: 16px;
     font-weight: 400;
@@ -3104,4 +3169,119 @@ text-transform: uppercase;
   
   
 }
+@media (min-width: 870px ) and (max-width: 1023px) {
+  .pricing {
+    height: 186rem;
+  }
+}
 
+@media (min-width: 801px ) and (max-width: 869px) {
+  .pricing {
+    height: 190rem;
+  }
+}
+@media (min-width:658px ) and (max-width:800px) {
+.pricing {
+    height: 192rem;
+  }
+}
+@media (min-width:577px ) and (max-width:657px) {
+  .pricing {
+    height: 197rem;
+  }
+}
+@media (max-width:576px ) {
+  .pricing h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+  }
+  .plan-text{
+    padding: 0;
+    padding-top: 21px;
+
+  }
+  .pricing {
+    height: 161rem;
+  }
+  .plan-mid {
+    padding: 0 21px;
+  }
+  .plan-header {
+    padding: 15px 0;
+    padding-left: 28px;
+    font-size: 18px;
+  }
+  .plan-price {
+    font-size: 54px;
+    font-weight: 500;
+  }
+  #dropdown {
+    font-size: 16px;
+    padding: 0 16px;
+    padding-right: 31px;
+  }
+  #dropdown::after {
+    top: 10px;
+    right: 13px;
+  }
+  #dropdown2 {
+    font-size: 16px;
+    padding: 0 16px;
+    padding-right: 31px;
+  }
+  #dropdown2::after {
+    top: 10px;
+    right: 13px;
+  }
+  .pricing .line {
+    margin: 12px 0px;
+  }
+  .plan-list li{ 
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px
+  }
+   .pricing li{ 
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px
+  }
+  .solo-plan .plan-button,
+  .pro-plan .plan-button {
+    font-size: 18px;
+    margin-left: 21px;
+    margin-right: 21px;
+    padding-top: 14px ;
+    padding-bottom: 14px ;
+  }
+  .right-custom .plan-button {
+    font-size: 18px;
+    margin-left: 21px;
+    margin-right: 21px;
+    padding-top: 14px ;
+    padding-bottom: 14px ;
+
+  }
+  .custom-header {
+    font-size: 18px;
+    padding:  15px 0;
+    padding-left: 28px;
+  }
+  .custom-plan .custom-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 21px;
+    padding-bottom: 0px;
+    padding-left: 28px;
+  }
+  .custom-plan .line {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
+}
