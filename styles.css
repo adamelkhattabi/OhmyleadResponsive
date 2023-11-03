@@ -109,6 +109,7 @@ a {
   cursor: pointer;
   padding-left: 6rem;
   height: 60px;
+  padding-bottom: 1rem;
  }
  .logo-col1{
   cursor: pointer;
@@ -190,18 +191,22 @@ line-height: normal;
     line-height: normal;
     border-radius: 31.5px;
     background: #FF456D;
-    z-index: 9999;
+    z-index: 9;
     border:none;
 }
 .button-pink:hover {
   text-decoration: none;
   cursor: pointer;
   color: #FFF;
-  border-radius: 27.5px;
+  border-radius: 31.5px;
   background: #F03E64;
   transition: all 0.3s;
 
 
+}
+.pink-container{
+  padding-top: 31px;
+  padding-bottom: 14px;
 }
 .nav-buttons{
   display: flex;
@@ -2045,8 +2050,8 @@ border: 1px solid #D9D9D9;
 background: #FFF;
     cursor: pointer;
     margin: 14px 0px;
-    overflow: hidden; /* Hide overflow content to enable smooth transition */
-    transition: height 0.3s; /* Add a transition for smooth height change */
+    overflow: hidden; 
+    transition: max-height 0.3s ease; 
     
 
 }
@@ -2106,7 +2111,33 @@ margin-bottom: 24px;
   overflow: hidden;
 }
 
-
+.guidance-section h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; 
+  padding-top: 83px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.guidance-text {
+  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 39px;
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 
 .circle {

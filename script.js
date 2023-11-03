@@ -5,6 +5,14 @@ accordionItems.forEach((item) => {
   const question = item.querySelector(".accordion-question");
 
   question.addEventListener("click", () => {
+    // Close all accordion items
+    accordionItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("active");
+      }
+    });
+
+    // Toggle the clicked accordion item
     item.classList.toggle("active");
   });
 });
