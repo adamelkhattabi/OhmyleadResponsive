@@ -666,7 +666,6 @@ h4 {
   .reminder-svg-img {
     max-width: 100%;
     height: auto;
-    margin-left: 1.25rem;
   }
   .analytics-responsive .line {
     margin-right: 1.25rem;
@@ -3037,6 +3036,9 @@ h4 {
   
 }
 @media  (max-width:1023px) {
+  .custom-list {
+    padding-bottom: 0;
+  }
   
   .pricing h2 {
     padding-left: 40px;
@@ -3284,4 +3286,35 @@ text-transform: uppercase;
     margin-right: 28px;
   }
 
+}
+
+@media (max-width:483px) {
+  .pricing {
+    height: 163rem ;
+  }
+}
+@media (max-width:422px) {
+  .pricing {
+    height: 164rem ;
+  }
+}
+@media (max-width:415px) {
+  .pricing {
+    height: 171rem ;
+  }
+}
+@media (max-width:360px) {
+  .pricing {
+    height: 178rem ;
+  }
+}
+@media (max-width:325px) {
+  .pricing {
+    height: 187rem ;
+  }
+}
+@media (max-width:319px) {
+  .pricing {
+    height: 194rem ;
+  }
 }

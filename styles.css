@@ -178,24 +178,24 @@ line-height: normal;
 }
 
 .button-pink {
-  cursor: pointer;
-  border: none;
-  color: #FFF;
-  border-radius: 27.5px;
-background: #FF456D;
-display: inline-block;
-  font-family: Plus Jakarta Sans;
-  text-decoration: none;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-padding: 17px 29px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+    padding: 20px 45px;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 31.5px;
+    background: #FF456D;
+    z-index: 9999;
+    border:none;
 }
 .button-pink:hover {
   text-decoration: none;
   cursor: pointer;
-  border: none;
   color: #FFF;
   border-radius: 27.5px;
   background: #F03E64;
@@ -224,6 +224,11 @@ padding: 17px 29px;
   padding-top: 11.81rem;
   padding-bottom: 10.375rem;
   position: relative;
+}
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .pricing {
   padding-bottom: 195px;
@@ -286,10 +291,11 @@ padding: 17px 29px;
   line-height: normal;
   border: 1px solid #129D4A;
   border-radius: 36px;
-  padding: 0px 16px;
+  padding: 0px;
+  padding-left: 16px;
   cursor: pointer;
   position: relative;
-  padding-right: 47px;
+  
 }
 #dropdown2 {
   white-space: nowrap;
@@ -301,10 +307,11 @@ padding: 17px 29px;
   line-height: normal;
   border: 1px solid #E9E9E9;
   border-radius: 36px;
-  padding: 0px 16px;
+  padding: 0 10px;
+  padding-left: 16px;
   cursor: pointer;
   position: relative;
-  padding-right: 30px;
+  
 }
 #dropdown::after {
   content: "";
@@ -328,13 +335,14 @@ padding: 17px 29px;
   right: 13px;
   
 }
+#dropdown select {
+  appearance: none;
+  background: transparent; 
+  border-radius: 0 0 36px 36px;
+  outline: none; 
+  width: 100%; 
+}
 
-.dropdown-container { 
-  position: relative;
-}
-.dropdown-container2 { 
-  position: relative;
-}
 #dropdownContent a {
   color: black;
   padding: 12px 16px;
@@ -546,18 +554,38 @@ padding: 17px 29px;
 
 
 .solo-plan .plan-button{
+  
   background: #129D4A;
   margin-bottom: 71px;
   margin-left: 39px;
   margin-right: 39px;
  
 }
+.solo-plan .plan-button:hover{
+  
+  background: #06903d;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  transition: all 0.3s;
+}
+
+
 .pro-plan .plan-button{
   background: #FF456D;
   margin-left: 39px;
   margin-right: 39px;
 }
-
+.pro-plan .plan-button:hover{
+  background: #F03E64;;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  transition: all 0.3s;
+}
+ 
 
 
 .plan-text-3{
@@ -573,8 +601,9 @@ padding: 17px 29px;
 }
 /* Custom CSS to style the list and add arrow background */
 .custom-list {
-  list-style: none; /* Remove default bullets */
-  padding-left: 20px; /* Add some spacing between the marker and text */
+  list-style: none; 
+  padding-left: 20px;
+  padding-bottom: 20px; 
 }
 
 .custom-list li {
@@ -651,6 +680,7 @@ padding: 17px 29px;
   padding-bottom: 36px;
 }
 .button-custom {
+  cursor: pointer;
   border-radius: 34.5px;
   background: #0D64B5;
   color: #FFF;
@@ -662,6 +692,14 @@ padding: 17px 29px;
   line-height: normal;
   padding: 20px 65px;
   margin-top: 18px;
+}
+.button-custom:hover{
+  background: #035098;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  transition: all 0.3s;
 }
 .button-custom-mobile {
   border-radius: 34.5px;
@@ -678,6 +716,15 @@ padding: 17px 29px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.button-custom-mobile:hover {
+  background: #035098;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  border-radius: 27.5px;
+  transition: all 0.3s;  
 }
 .left-custom {
   padding-bottom: 70px;
@@ -2114,6 +2161,9 @@ z-index: 9999;
 
 }
 .guidance-button:hover{
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 0.3s;
   background-color: #F03E64;
   text-decoration: none;

@@ -205,90 +205,55 @@ $(document).ready(function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdown = document.getElementById("dropdown");
-  const dropdownContent = document.getElementById("dropdownContent");
 
-  const option1 = document.getElementById("option1");
-  const option2 = document.getElementById("option2");
-  const option3 = document.getElementById("option3");
+        function updateDropdown1() {
+          var dropdown1 = document.getElementById("dropdown");
+          var planPrice1 = document.getElementById("planPrice");
+          var monthlyPrice1 = document.getElementById("monthlyPrice");
+          var selectedOption = dropdown1.options[dropdown1.selectedIndex].value;
 
-  // Toggle the dropdown content when clicking on the dropdown span
-  dropdown.addEventListener("click", function () {
-    dropdownContent.style.display =
-      dropdownContent.style.display === "block" ? "none" : "block";
-  });
+          switch (selectedOption) {
+            case "250":
+              planPrice1.textContent = "$0.00";
+              monthlyPrice1.textContent = "$0";
+              break;
+            case "1000":
+              planPrice1.textContent = "$15.83";
+              monthlyPrice1.textContent = "$19";
+              break;
+            case "2500":
+              planPrice1.textContent = "$31.66"; // Update this value
+              monthlyPrice1.textContent = "$38"; // Update this value
+              break;
+            // Add more cases as needed
+          }
+        }
 
-  // Close the dropdown when the user clicks outside of it
-  window.addEventListener("click", function (event) {
-    if (!event.target.matches("#dropdown")) {
-      dropdownContent.style.display = "none";
-    }
-  });
+        function updateDropdown2() {
+          var dropdown2 = document.getElementById("dropdown2");
+          var planPrice2 = document.getElementById("planPrice2");
+          var monthlyPrice2 = document.getElementById("monthlyPrice2");
+          var selectedOption = dropdown2.options[dropdown2.selectedIndex].value;
 
-  // Event listeners for each option
-  option1.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown.textContent = "250"; // Set the selected option text
-    dropdownContent.style.display = "none"; // Hide the dropdown options
-  });
+          switch (selectedOption) {
+            case "5000":
+              planPrice2.textContent = "$65.83";
+              monthlyPrice2.textContent = "$79";
+              break;
+            case "10k":
+              planPrice2.textContent = "$131.66";
+              monthlyPrice2.textContent = "$158";
+              break;
+            case "25k":
+              planPrice2.textContent = "$263.33";
+              monthlyPrice2.textContent = "$316";
+              break;
+            case "50k":
+              planPrice2.textContent = "$497.5";
+              monthlyPrice2.textContent = "$597";
+              break;
+            // Add more cases as needed
+          }
+        }
 
-  option2.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown.textContent = "1000";
-    dropdownContent.style.display = "none";
-  });
 
-  option3.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown.textContent = "2500";
-    dropdownContent.style.display = "none";
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdown2 = document.getElementById("dropdown2");
-  const dropdownContent2 = document.getElementById("dropdownContent2");
-  const option4 = document.getElementById("option4");
-  const option5 = document.getElementById("option5");
-  const option6 = document.getElementById("option6");
-  const option7 = document.getElementById("option7");
-
-  // Toggle the dropdown content when clicking on the dropdown span
-  dropdown2.addEventListener("click", function () {
-    dropdownContent2.style.display =
-      dropdownContent2.style.display === "block" ? "none" : "block";
-  });
-
-  // Event listeners for each option in Dropdown 2
-  option4.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown2.textContent = "5000";
-    dropdownContent2.style.display = "none";
-  });
-
-  option5.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown2.textContent = "10k";
-    dropdownContent2.style.display = "none";
-  });
-
-  option6.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown2.textContent = "25k";
-    dropdownContent2.style.display = "none";
-  });
-
-  option7.addEventListener("click", function (event) {
-    event.preventDefault();
-    dropdown2.textContent = "50k";
-    dropdownContent2.style.display = "none";
-  });
-
-  // Close the dropdown when the user clicks outside of it
-  window.addEventListener("click", function (event) {
-    if (!event.target.matches("#dropdown2")) {
-      dropdownContent2.style.display = "none";
-    }
-  });
-});
