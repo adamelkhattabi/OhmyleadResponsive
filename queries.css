@@ -148,6 +148,11 @@
     display: none;
   }
 }
+@media (min-width: 1300px) {
+  .address {
+    padding-bottom: 32px;
+  }
+}
 @media  (min-width: 1440px) {
   
   .owl-carousel.owl-theme.first-carousel {
@@ -1758,6 +1763,9 @@ h3 {
 }
 
 @media screen and (max-width: 576px)  {
+  .nav-buttons .button-pink {
+    display: none;
+  }
   .owl-prev {
     display: none;
   }
@@ -3045,7 +3053,6 @@ h4 {
     padding-right: 40px;
   }
   .line{
-    margin: 0;
     width: auto;
     margin-right: 39px;
     margin-left: 39px;
