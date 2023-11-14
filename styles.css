@@ -519,6 +519,7 @@ line-height: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  padding-bottom: 21px;
 }
 .solo-plan .plan-price{
   color: #129D4A;
@@ -550,7 +551,7 @@ line-height: normal;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 28px;
 }
 .plan-list-header{
   color: #1E1E1E;
@@ -668,11 +669,7 @@ line-height: normal;
   line-height: normal;
 }
 
-.custom-list li::before {
-  content: "•"; 
-  color: black; 
-  margin-right: 5px; 
-}
+
 .arrow-icon{
   width: 36px;
   height: 38px;
@@ -816,7 +813,7 @@ line-height: normal;
   
   padding-left: 1rem;
 
-  padding-top: 8.75rem;
+  padding-top: 6.75rem;
   display: grid;
   grid-template-columns: 1fr 1.7fr;
     
