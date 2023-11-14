@@ -63,15 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 $(document).ready(function () {
   // Initialize the carousels
   $(".first-carousel").owlCarousel({
     items: 4,
-    navText: [
-      "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-      "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-    ],
     autoplay: true, // Add this option
     autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
     loop: true,
@@ -82,24 +77,12 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1, // Display 1 item on small screens (less than 600px wide)
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
       },
       400: {
         items: 2, // Display 1 item on small screens (less than 600px wide)
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
       },
       650: {
         items: 3, // Display 2 items on medium-sized screens (768px wide and above)
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
       },
 
       1024: {
@@ -117,34 +100,19 @@ $(document).ready(function () {
     margin: 20,
     autoplay: true, // Add this option
     autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
-    navText: [
-      "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-      "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-    ],
+
     responsive: {
       0: {
         items: 1,
         margin: 10, // Adjust the margin for smaller screens
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
       },
       400: {
         items: 2,
         margin: 10, // Adjust the margin for smaller screens
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
       },
       650: {
         items: 3,
         margin: 10, // Adjust the margin for medium-sized screens
-        navText: [
-          "<div class='custom-prev'><img src='images/arrow-left-sm.svg' alt='Previous'></div>",
-          "<div class='custom-next'><img src='images/arrow-right-sm.svg' alt='Next'></div>",
-        ],
       },
       1024: {
         items: 4,
@@ -213,57 +181,55 @@ $(document).ready(function () {
   });
 });
 
+function updateDropdown1() {
+  var dropdown1 = document.getElementById("dropdown");
+  var planPrice1 = document.getElementById("planPrice");
+  var monthlyPrice1 = document.getElementById("monthlyPrice");
+  var selectedOption = dropdown1.options[dropdown1.selectedIndex].value;
 
-        function updateDropdown1() {
-          var dropdown1 = document.getElementById("dropdown");
-          var planPrice1 = document.getElementById("planPrice");
-          var monthlyPrice1 = document.getElementById("monthlyPrice");
-          var selectedOption = dropdown1.options[dropdown1.selectedIndex].value;
+  switch (selectedOption) {
+    case "250":
+      planPrice1.textContent = "$0.00";
+      monthlyPrice1.textContent = "$0";
+      break;
+    case "1000":
+      planPrice1.textContent = "$15.83";
+      monthlyPrice1.textContent = "$19";
+      break;
+    case "2500":
+      planPrice1.textContent = "$31.66"; // Update this value
+      monthlyPrice1.textContent = "$38"; // Update this value
+      break;
+    // Add more cases as needed
+  }
+}
 
-          switch (selectedOption) {
-            case "250":
-              planPrice1.textContent = "$0.00";
-              monthlyPrice1.textContent = "$0";
-              break;
-            case "1000":
-              planPrice1.textContent = "$15.83";
-              monthlyPrice1.textContent = "$19";
-              break;
-            case "2500":
-              planPrice1.textContent = "$31.66"; // Update this value
-              monthlyPrice1.textContent = "$38"; // Update this value
-              break;
-            // Add more cases as needed
-          }
-        }
+function updateDropdown2() {
+  var dropdown2 = document.getElementById("dropdown2");
+  var planPrice2 = document.getElementById("planPrice2");
+  var monthlyPrice2 = document.getElementById("monthlyPrice2");
+  var selectedOption = dropdown2.options[dropdown2.selectedIndex].value;
 
-        function updateDropdown2() {
-          var dropdown2 = document.getElementById("dropdown2");
-          var planPrice2 = document.getElementById("planPrice2");
-          var monthlyPrice2 = document.getElementById("monthlyPrice2");
-          var selectedOption = dropdown2.options[dropdown2.selectedIndex].value;
-
-          switch (selectedOption) {
-            case "5000":
-              planPrice2.textContent = "$65.83";
-              monthlyPrice2.textContent = "$79";
-              break;
-            case "10k":
-              planPrice2.textContent = "$131.66";
-              monthlyPrice2.textContent = "$158";
-              break;
-            case "25k":
-              planPrice2.textContent = "$263.33";
-              monthlyPrice2.textContent = "$316";
-              break;
-            case "50k":
-              planPrice2.textContent = "$497.5";
-              monthlyPrice2.textContent = "$597";
-              break;
-            // Add more cases as needed
-          }
-        }
-
+  switch (selectedOption) {
+    case "5000":
+      planPrice2.textContent = "$65.83";
+      monthlyPrice2.textContent = "$79";
+      break;
+    case "10k":
+      planPrice2.textContent = "$131.66";
+      monthlyPrice2.textContent = "$158";
+      break;
+    case "25k":
+      planPrice2.textContent = "$263.33";
+      monthlyPrice2.textContent = "$316";
+      break;
+    case "50k":
+      planPrice2.textContent = "$497.5";
+      monthlyPrice2.textContent = "$597";
+      break;
+    // Add more cases as needed
+  }
+}
 
 var btn = $("#button");
 
@@ -279,4 +245,31 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
+
+function filterTools(category) {
+  const toolContainers = document.querySelectorAll(".tool-container");
+  const buttons = document.querySelectorAll(".button-tool");
+
+  toolContainers.forEach((toolContainer) => {
+    const toolCategory = toolContainer.dataset.category;
+
+    if (category === "all" || category === toolCategory) {
+      toolContainer.style.display = "flex";
+    } else {
+      toolContainer.style.display = "none";
+    }
+  });
+
+  // Remove the active class from all buttons
+  buttons.forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  // Add the active class to the clicked button
+  buttons.forEach((button) => {
+    if (category === button.textContent.trim()) {
+      button.classList.add("active");
+    }
+  });
+}
 
