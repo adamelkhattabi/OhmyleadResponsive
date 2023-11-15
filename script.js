@@ -1,6 +1,9 @@
 // JavaScript to toggle the FAQ answers
 const accordionItems = document.querySelectorAll(".accordion-item");
 
+// Add "active" class to the first accordion item
+accordionItems[0].classList.add("active");
+
 accordionItems.forEach((item) => {
   const question = item.querySelector(".accordion-question");
 
@@ -71,22 +74,25 @@ $(document).ready(function () {
     autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
     loop: true,
     nav: true,
+    nav: false,
     dots: false, // Enable dots
-    margin: 17,
 
     responsive: {
       0: {
         items: 1, // Display 1 item on small screens (less than 600px wide)
+        nav: false,
       },
       400: {
         items: 2, // Display 1 item on small screens (less than 600px wide)
+        nav: false,
       },
       650: {
         items: 3, // Display 2 items on medium-sized screens (768px wide and above)
+        nav: false,
       },
 
       1024: {
-        items: 4,
+        items: 5,
         nav: false,
       },
     },
@@ -105,19 +111,22 @@ $(document).ready(function () {
       0: {
         items: 1,
         margin: 10, // Adjust the margin for smaller screens
+        nav: false,
       },
       400: {
         items: 2,
         margin: 10, // Adjust the margin for smaller screens
+        nav: false,
       },
       650: {
         items: 3,
         margin: 10, // Adjust the margin for medium-sized screens
+        nav: false,
       },
       1024: {
         items: 4,
         margin: 20, // Adjust the margin for larger screens
-        nnav: false,
+        nav: false,
       },
       1220: {
         items: 6,
@@ -133,7 +142,7 @@ $(document).ready(function () {
     loop: true,
     dots: true,
     margin: 17,
-    autoplay: true, // Add this option
+    // Add this option
     autoplayTimeout: 3000, // Set the autoplay time interval in milliseconds (e.g., 3000ms for 3 seconds)
     nav: false,
     responsive: {
@@ -272,4 +281,3 @@ function filterTools(category) {
     }
   });
 }
-
