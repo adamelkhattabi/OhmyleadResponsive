@@ -2064,7 +2064,7 @@ h3 {
   height: 7.5rem;
   padding-left: 1rem;
   position: fixed;
-  background: linear-gradient(27deg, #1D2CAB -2.26%, #00BAE3 100%);
+  background: white;
 }
 
 .nav-login{

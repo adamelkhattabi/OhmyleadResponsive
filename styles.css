@@ -99,7 +99,12 @@ a {
   cursor: pointer;
 
 }
-
+.hamburger-icon {
+  width: 80px;
+}
+.close-menu-icon {
+  width: 80px;
+}
 
 /**************************/
 /* NAVIGATION */
