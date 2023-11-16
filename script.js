@@ -152,7 +152,7 @@ $(document).ready(function () {
       },
       400: {
         nav: false,
-        items: 1.2, // Display 1 item on small screens (less than 600px wide)
+        items: 1.4, // Display 1 item on small screens (less than 600px wide)
       },
       600: {
         nav: false,
@@ -160,10 +160,10 @@ $(document).ready(function () {
       },
       800: {
         nav: false,
-        items: 2, // Display 2 items on medium-sized screens (768px wide and above)
+        items: 2.1, // Display 2 items on medium-sized screens (768px wide and above)
       },
 
-      992: {
+      1024: {
         nav: false,
         margin: 0,
 

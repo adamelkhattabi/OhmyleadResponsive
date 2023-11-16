@@ -1851,6 +1851,16 @@ h3 {
 }
 
 @media screen and (max-width: 576px)  {
+  .nav-buttons .button-pink {
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 14px 21px 13px 22px;
+  }
       .tools {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -2130,6 +2140,7 @@ h1{
   padding-right:1.25rem;
 }
 
+
 .button-pink{
   color: #FFF;
   font-family: Plus Jakarta Sans;
@@ -2138,7 +2149,7 @@ h1{
   font-weight: 600;
   line-height: normal;
   margin-top: 28px;
-  margin-right: 18px;
+  margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2930,9 +2941,7 @@ h4 {
 
 }
 @media screen and (max-width: 430px ) {
-   .nav-buttons .button-pink {
-    display: none;
-  }
+   
    .guidance-button{
   border-radius: 31.5px;
   background: #FF456D;
@@ -2966,10 +2975,7 @@ h4 {
   .imp-card-text{
     font-size: 14px;
   }
-  h2 {
-    font-size: 30px !important;
-    line-height: 40px !important;
-  }
+
    .contacts-responsive h2 {
     text-align: left;
   }
@@ -3085,11 +3091,7 @@ h4 {
   text-align: center
 }
 
-.nav-buttons {
-    position: absolute;
-    right: 56px;
-    top: 14px;
-}
+
 .custom-prev {
     left: 1.25rem;
     top: 0;
@@ -3117,7 +3119,16 @@ h4 {
     font-size: 15px;
   }
 }
-@media (max-width: 330px) {
+@media (max-width:365px) {
+    .pricing h2 {
+    font-size: 36px !important;
+    line-height: 45px !important;
+  }
+}
+@media (max-width: 350px) {
+  .nav-buttons .button-pink {
+    display: none;
+  }
   .avatar{
     display: none;
   }
@@ -3271,10 +3282,18 @@ text-transform: uppercase;
   
 }
 @media (max-width:768px) {
+  .pricing-cards-container {
+    margin: 0 4%;
+  }
   .pricing h3 {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 17px;
+    padding-top: 61px;
+  }
+  .pricing h2 {
+    
+    padding-top: 16px;
   }
   .pricing-cards {
     gap: 31px;
@@ -3286,7 +3305,7 @@ text-transform: uppercase;
     font-size: 16px;
   }
   .pricing-cards-container {
-    top: 27rem;
+    top: 20rem;
   }
   
   .plan-text{
@@ -3344,6 +3363,9 @@ text-transform: uppercase;
   }
 }
 @media (max-width:576px ) {
+  .pricing-cards-container {
+    top: 25rem;
+  }
   .pricing h2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -3443,6 +3465,48 @@ text-transform: uppercase;
     height: 163rem ;
   }
 }
+@media (max-width:520px) {
+  .imp-card-text, .imp-card-text-last {
+color: #1E1E1E;
+font-family: Plus Jakarta Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .blue-span {
+    color: #00B6F9;
+font-family: Plus Jakarta Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .text-b2 {
+    color: #1E1E1E;
+font-family: Plus Jakarta Sans;
+font-size: 11px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .spanb2 {
+    color: #00B6F9;
+font-family: Plus Jakarta Sans;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .avatar img {
+    height: 32px;
+  }
+  .owl-carousel .owl-item .impact-card {
+    height: 323px;
+    padding: 26px 26px 32px 30px;
+  }
+}
+
 @media (max-width:422px) {
   .pricing {
     height: 164rem ;
@@ -3512,20 +3576,32 @@ text-transform: uppercase;
   .section-hero {
     height: 49rem ;
   }
+  .owl-carousel .owl-item .impact-card {
+    height: 450px;
+  }
 }
 @media (max-width:1400px) and (min-width:1350px) {
   .section-hero {
     height: 47.5rem ;
+  }
+  .owl-carousel .owl-item .impact-card {
+    height: 450px;
   }
 }
 @media (max-width:1349px) and (min-width:1300px) {
   .section-hero {
     height: 46rem ;
   }
+  .owl-carousel .owl-item .impact-card {
+    height: 450px;
+  }
 }
 @media (max-width:1299px) and (min-width:1262px) {
   .section-hero {
     height: 46.5rem ;
+  }
+  .owl-carousel .owl-item .impact-card {
+    height: 450px;
   }
 }
 @media (max-width:1330px)  {
@@ -3555,6 +3631,9 @@ text-transform: uppercase;
    .section-hero .button-pink {
     font-size: 14px;
   }
+  .owl-carousel .owl-item .impact-card {
+    height: 480px;
+  }
 }
 @media (max-width:1149px) and (min-width:1024px){
   .section-hero h1{
@@ -3572,6 +3651,25 @@ text-transform: uppercase;
   .hero-bottom-text {
     font-size: 13px;
   }
+  .owl-carousel .owl-item .impact-card {
+    height: 460px;
+  }
+  .text-b2 {
+    font-size: 16px;
+  }
+  .spanb2 {
+    font-size: 16px;
+  }
+  .imp-card-text, .imp-card-text-last {
+    font-size: 16px;
+  }
+  .avatar img {
+    height: 50px;
+  }
+  .owl-carousel .owl-item .impact-card {
+    padding: 24px 24px 30px 28px;
+  }
+
   
 }
 @media (max-width:1249px) and (min-width:1200px) {

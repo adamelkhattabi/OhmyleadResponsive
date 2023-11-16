@@ -314,6 +314,7 @@ line-height: normal;
   padding-bottom: 5px;
   padding-right: 29px;
   padding-left: 16px;
+  margin-right: 4px;
   cursor: pointer;
   position: relative;
   background: url('images/Vector29.svg') no-repeat  center;
@@ -385,9 +386,10 @@ line-height: normal;
   display: block;
 }
 
-.pricing .pro-plan ul {
-  list-style: none; /* Remove default bullets */
-  padding-left: 5px; /* Add some spacing between the marker and text */
+.pricing .pro-plan ul,
+.pricing .solo-plan ul {
+  
+  padding-left: 21px; /* Add some spacing between the marker and text */
 }
 .pricing li {
   color: #1E1E1E;
@@ -396,7 +398,7 @@ line-height: normal;
   font-style: normal;
   font-weight: 400;
   line-height: 40px; 
-  list-style: none;
+  
 }
 
 
@@ -623,7 +625,6 @@ line-height: normal;
 
 .custom-list li {
   position: relative; 
-  padding-left: 10px; 
   color: #1E1E1E;
   font-family: Plus Jakarta Sans;
   font-size: 17px;
@@ -1799,11 +1800,11 @@ gap: 17px;
 border-radius: 26px;
 border: 1px solid #D9D9D9;
 background: #FFF;
-height: 507px;
-margin-left: 10px;
+height: 416px;
+margin-left: 17px;
 display: flex;
 flex-direction: column;
-padding:34px 38px 36px 32px;
+padding:28px 34px 36px 32px;
 
 }
 .custom-prev-last{
@@ -1881,13 +1882,16 @@ line-height: 28px;
 }
 .imp-card-text,
 .imp-card-text-last{
-  padding-top: 20%;
+  padding-top: 7.21%;
   color: #1E1E1E;
 font-family: Plus Jakarta Sans;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; 
+}
+.impact-section .owl-carousel.owl-theme {
+  padding: 0 6.88%;
 }
 
 
@@ -2287,10 +2291,7 @@ display: flex;
 
 
 
-.twitter-logo-rsp {
-  min-height: 30px;
-  min-width: 30px;
-}
+
 .testimonial-card2 {
     width: 401px;
     height: 416px;
@@ -2320,8 +2321,8 @@ display: flex;
 }
 
 .avatar img {
-    width: 40px;
-    height: 40px;
+    max-width: 60px;
+    max-height: 60px;
     border-radius: 50%;
 }
 
