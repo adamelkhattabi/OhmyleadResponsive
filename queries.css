@@ -3186,9 +3186,7 @@ h4 {
   }
 }
 @media (min-width:1024px) {
-  .header {
-    background:none;
-  }
+  
   .sign-in{
     display: none !important;
   }
