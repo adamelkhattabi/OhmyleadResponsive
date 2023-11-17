@@ -2207,11 +2207,12 @@ padding-bottom: 77px;
 
 
 .footer-container{
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  padding-left: 100px;
-  padding-top:64px;
-  gap: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding-right: 9rem;
+    padding-left: 100px;
+    padding-top: 64px;
+    gap: 58px;
 }
 
 .footer-heading{
